@@ -1,0 +1,2508 @@
+[
+  {
+    "created_at": "Fri Apr 10 05:14:19 +0000 2015",
+    "id": 586396769455452161,
+    "id_str": "586396769455452161",
+    "text": "RT @kylegaddo: son\n\nyou're named after the two bravest men i ever knew.\n\ncarry the name \"goku vegeta\" with you proudly",
+    "source": "<a href=\"http://twitter.com/#!/download/ipad\" rel=\"nofollow\">Twitter for iPad</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 18918415,
+      "id_str": "18918415",
+      "name": "koush",
+      "screen_name": "koush",
+      "location": "Seattle, WA",
+      "profile_location": null,
+      "description": "Founder of ClockworkMod. Creator of AllCast, ROM Manager, and Helium. Crossfitter, olympic lifting junkie. Former pro gamer.",
+      "url": "http://t.co/cw428WFmpa",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/cw428WFmpa",
+              "expanded_url": "http://gplus.to/koush",
+              "display_url": "gplus.to/koush",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 52698,
+      "friends_count": 299,
+      "listed_count": 2325,
+      "created_at": "Mon Jan 12 22:29:54 +0000 2009",
+      "favourites_count": 1671,
+      "utc_offset": -25200,
+      "time_zone": "Pacific Time (US & Canada)",
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 15498,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "EBEBEB",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme7/bg.gif",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme7/bg.gif",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/378800000495697516/988b32f009f49112d4c0a24d2acb381d_normal.jpeg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/378800000495697516/988b32f009f49112d4c0a24d2acb381d_normal.jpeg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/18918415/1398307997",
+      "profile_link_color": "990000",
+      "profile_sidebar_border_color": "DFDFDF",
+      "profile_sidebar_fill_color": "F3F3F3",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweeted_status": {
+      "created_at": "Fri Apr 10 04:58:20 +0000 2015",
+      "id": 586392749047287809,
+      "id_str": "586392749047287809",
+      "text": "son\n\nyou're named after the two bravest men i ever knew.\n\ncarry the name \"goku vegeta\" with you proudly",
+      "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 116308543,
+        "id_str": "116308543",
+        "name": "Kyle Gaddo",
+        "screen_name": "kylegaddo",
+        "location": "Addison, IL",
+        "profile_location": null,
+        "description": "@11x2 CM. Wordmancer:  @FatalHeroes, @SaveContinue, @HeavyBlog, @TheParanoidGR. Photo guy sometimes. Tweets represent the Dark Lord Satan.",
+        "url": "http://t.co/IRxcpwYJF2",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "http://t.co/IRxcpwYJF2",
+                "expanded_url": "http://www.savecontinue.com/",
+                "display_url": "savecontinue.com",
+                "indices": [
+                  0,
+                  22
+                ]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 1160,
+        "friends_count": 1129,
+        "listed_count": 38,
+        "created_at": "Mon Feb 22 00:28:24 +0000 2010",
+        "favourites_count": 17247,
+        "utc_offset": -18000,
+        "time_zone": "Central Time (US & Canada)",
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 121613,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "022330",
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/837649018/94d590461659ee363eabdabb873dfdb0.jpeg",
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/837649018/94d590461659ee363eabdabb873dfdb0.jpeg",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/577033362067496960/MeR9f_w__normal.jpeg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/577033362067496960/MeR9f_w__normal.jpeg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/116308543/1425094238",
+        "profile_link_color": "C20B0B",
+        "profile_sidebar_border_color": "000000",
+        "profile_sidebar_fill_color": "C0DFEC",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": {
+        "id": "1d9a5370a355ab0c",
+        "url": "https://api.twitter.com/1.1/geo/id/1d9a5370a355ab0c.json",
+        "place_type": "city",
+        "name": "Chicago",
+        "full_name": "Chicago, IL",
+        "country_code": "US",
+        "country": "United States",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -87.940033,
+                41.644102
+              ],
+              [
+                -87.523993,
+                41.644102
+              ],
+              [
+                -87.523993,
+                42.0230669
+              ],
+              [
+                -87.940033,
+                42.0230669
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "contributors": null,
+      "retweet_count": 7,
+      "favorite_count": 10,
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": []
+      },
+      "favorited": false,
+      "retweeted": false,
+      "lang": "en"
+    },
+    "retweet_count": 7,
+    "favorite_count": 0,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "kylegaddo",
+          "name": "Kyle Gaddo",
+          "id": 116308543,
+          "id_str": "116308543",
+          "indices": [
+            3,
+            13
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Fri Apr 10 04:55:39 +0000 2015",
+    "id": 586392072799723521,
+    "id_str": "586392072799723521",
+    "text": "Uh-oh \"Learning 3000 characters is not like learning 30 characters a hundred times, it's much, much harder.\" http://t.co/iBSq3xhlFT",
+    "source": "<a href=\"http://twitter.com/#!/download/ipad\" rel=\"nofollow\">Twitter for iPad</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 143264018,
+      "id_str": "143264018",
+      "name": "Dr. Corbett Moran",
+      "screen_name": "corbett",
+      "location": "Los Angeles",
+      "profile_location": null,
+      "description": "Theoretical Astrophysics Postdoc @Caltech. Physicist, Software Engineer, Maker, Ethicist. Formerly @SpaceX, @MIT. Aspiring astronaut.",
+      "url": "http://t.co/8FnSgchSRm",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/8FnSgchSRm",
+              "expanded_url": "http://christinecorbettmoran.com/",
+              "display_url": "christinecorbettmoran.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 3806,
+      "friends_count": 1061,
+      "listed_count": 221,
+      "created_at": "Thu May 13 01:13:27 +0000 2010",
+      "favourites_count": 5875,
+      "utc_offset": -25200,
+      "time_zone": "Pacific Time (US & Canada)",
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 14795,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "020812",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/195575468/x942ca827eb2d4fe7a5c869a779cb41e.jpg",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/195575468/x942ca827eb2d4fe7a5c869a779cb41e.jpg",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/583705462949810176/_q4350J9_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/583705462949810176/_q4350J9_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/143264018/1428001271",
+      "profile_link_color": "2280A9",
+      "profile_sidebar_border_color": "2280A9",
+      "profile_sidebar_fill_color": "020812",
+      "profile_text_color": "17406C",
+      "profile_use_background_image": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweet_count": 0,
+    "favorite_count": 2,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": [
+        {
+          "url": "http://t.co/iBSq3xhlFT",
+          "expanded_url": "http://blog2.skritter.com/2015/04/hacking-most-difficult-chinese.html",
+          "display_url": "blog2.skritter.com/2015/04/hackin…",
+          "indices": [
+            109,
+            131
+          ]
+        }
+      ]
+    },
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Fri Apr 10 04:53:25 +0000 2015",
+    "id": 586391509026484225,
+    "id_str": "586391509026484225",
+    "text": "Still really loving the @SkritterHQ app! Worth every penny to get the most out of my Chinese studies",
+    "source": "<a href=\"http://twitter.com/#!/download/ipad\" rel=\"nofollow\">Twitter for iPad</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 143264018,
+      "id_str": "143264018",
+      "name": "Dr. Corbett Moran",
+      "screen_name": "corbett",
+      "location": "Los Angeles",
+      "profile_location": null,
+      "description": "Theoretical Astrophysics Postdoc @Caltech. Physicist, Software Engineer, Maker, Ethicist. Formerly @SpaceX, @MIT. Aspiring astronaut.",
+      "url": "http://t.co/8FnSgchSRm",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/8FnSgchSRm",
+              "expanded_url": "http://christinecorbettmoran.com/",
+              "display_url": "christinecorbettmoran.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 3806,
+      "friends_count": 1061,
+      "listed_count": 221,
+      "created_at": "Thu May 13 01:13:27 +0000 2010",
+      "favourites_count": 5875,
+      "utc_offset": -25200,
+      "time_zone": "Pacific Time (US & Canada)",
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 14795,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "020812",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/195575468/x942ca827eb2d4fe7a5c869a779cb41e.jpg",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/195575468/x942ca827eb2d4fe7a5c869a779cb41e.jpg",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/583705462949810176/_q4350J9_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/583705462949810176/_q4350J9_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/143264018/1428001271",
+      "profile_link_color": "2280A9",
+      "profile_sidebar_border_color": "2280A9",
+      "profile_sidebar_fill_color": "020812",
+      "profile_text_color": "17406C",
+      "profile_use_background_image": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweet_count": 0,
+    "favorite_count": 2,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "SkritterHQ",
+          "name": "Skritter",
+          "id": 109291321,
+          "id_str": "109291321",
+          "indices": [
+            24,
+            35
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Fri Apr 10 04:46:36 +0000 2015",
+    "id": 586389794248245249,
+    "id_str": "586389794248245249",
+    "text": "RT @pmarca: Is it too late to change the name to Apple Unix Supercomputer On Your Wrist?",
+    "source": "<a href=\"http://twitter.com/#!/download/ipad\" rel=\"nofollow\">Twitter for iPad</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 143264018,
+      "id_str": "143264018",
+      "name": "Dr. Corbett Moran",
+      "screen_name": "corbett",
+      "location": "Los Angeles",
+      "profile_location": null,
+      "description": "Theoretical Astrophysics Postdoc @Caltech. Physicist, Software Engineer, Maker, Ethicist. Formerly @SpaceX, @MIT. Aspiring astronaut.",
+      "url": "http://t.co/8FnSgchSRm",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/8FnSgchSRm",
+              "expanded_url": "http://christinecorbettmoran.com/",
+              "display_url": "christinecorbettmoran.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 3806,
+      "friends_count": 1061,
+      "listed_count": 221,
+      "created_at": "Thu May 13 01:13:27 +0000 2010",
+      "favourites_count": 5875,
+      "utc_offset": -25200,
+      "time_zone": "Pacific Time (US & Canada)",
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 14795,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "020812",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/195575468/x942ca827eb2d4fe7a5c869a779cb41e.jpg",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/195575468/x942ca827eb2d4fe7a5c869a779cb41e.jpg",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/583705462949810176/_q4350J9_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/583705462949810176/_q4350J9_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/143264018/1428001271",
+      "profile_link_color": "2280A9",
+      "profile_sidebar_border_color": "2280A9",
+      "profile_sidebar_fill_color": "020812",
+      "profile_text_color": "17406C",
+      "profile_use_background_image": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweeted_status": {
+      "created_at": "Fri Apr 10 04:28:07 +0000 2015",
+      "id": 586385145361408000,
+      "id_str": "586385145361408000",
+      "text": "Is it too late to change the name to Apple Unix Supercomputer On Your Wrist?",
+      "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 5943622,
+        "id_str": "5943622",
+        "name": "Marc Andreessen",
+        "screen_name": "pmarca",
+        "location": "Menlo Park, CA",
+        "profile_location": null,
+        "description": "Where's the kaboom? There was supposed to be an earth-shattering kaboom!",
+        "url": "http://t.co/kn6m038bNW",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "http://t.co/kn6m038bNW",
+                "expanded_url": "http://www.a16z.com",
+                "display_url": "a16z.com",
+                "indices": [
+                  0,
+                  22
+                ]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 297134,
+        "friends_count": 4861,
+        "listed_count": 6094,
+        "created_at": "Thu May 10 23:39:54 +0000 2007",
+        "favourites_count": 142274,
+        "utc_offset": -25200,
+        "time_zone": "Pacific Time (US & Canada)",
+        "geo_enabled": false,
+        "verified": true,
+        "statuses_count": 51116,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "131516",
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/378800000162904615/QUPx_0yO.jpeg",
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/378800000162904615/QUPx_0yO.jpeg",
+        "profile_background_tile": true,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/584512718423465984/g2YuBX-Q_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/584512718423465984/g2YuBX-Q_normal.jpg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/5943622/1419247370",
+        "profile_link_color": "12297A",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "EFEFEF",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "retweet_count": 34,
+      "favorite_count": 64,
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": []
+      },
+      "favorited": false,
+      "retweeted": false,
+      "lang": "en"
+    },
+    "retweet_count": 34,
+    "favorite_count": 0,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "pmarca",
+          "name": "Marc Andreessen",
+          "id": 5943622,
+          "id_str": "5943622",
+          "indices": [
+            3,
+            10
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Fri Apr 10 04:02:23 +0000 2015",
+    "id": 586378668072546304,
+    "id_str": "586378668072546304",
+    "text": "#BU can suck a dick #SIOUXBABY 💚",
+    "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 295950158,
+      "id_str": "295950158",
+      "name": "h a y h a y",
+      "screen_name": "hcronquist",
+      "location": "North Dakota - Arizona - NYC",
+      "profile_location": null,
+      "description": "quick and curious and playful and strong • cat lady",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 208,
+      "friends_count": 213,
+      "listed_count": 1,
+      "created_at": "Mon May 09 23:08:11 +0000 2011",
+      "favourites_count": 2723,
+      "utc_offset": -25200,
+      "time_zone": "Arizona",
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 5067,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "FFE0F6",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/276763050/picblock.jpg",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/276763050/picblock.jpg",
+      "profile_background_tile": true,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/378800000083364126/e828f9491e5adb6f354d394ff7d353da_normal.jpeg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/378800000083364126/e828f9491e5adb6f354d394ff7d353da_normal.jpeg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/295950158/1348249645",
+      "profile_link_color": "56AEAC",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "B7E9E8",
+      "profile_text_color": "121647",
+      "profile_use_background_image": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweet_count": 1,
+    "favorite_count": 1,
+    "entities": {
+      "hashtags": [
+        {
+          "text": "BU",
+          "indices": [
+            0,
+            3
+          ]
+        },
+        {
+          "text": "SIOUXBABY",
+          "indices": [
+            20,
+            30
+          ]
+        }
+      ],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Fri Apr 10 03:54:08 +0000 2015",
+    "id": 586376589987844096,
+    "id_str": "586376589987844096",
+    "text": "Looks neat, though I'm guessing this will only be available for both verified accounts and brands 😕 https://t.co/EaKR2OYAyK",
+    "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 195348872,
+      "id_str": "195348872",
+      "name": "Chris Lacy",
+      "screen_name": "chrismlacy",
+      "location": "Brisbane, Australia",
+      "profile_location": null,
+      "description": "Developer of @ActionLauncher, @Link_Bubble & @TweetLanes. I don't consciously wear a beard, I just rarely bother shaving. DM me, but check Settings-FAQ first.",
+      "url": "https://t.co/ygj7nPgM3a",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/ygj7nPgM3a",
+              "expanded_url": "https://play.google.com/store/apps/developer?id=Chris+Lacy",
+              "display_url": "play.google.com/store/apps/dev…",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 36824,
+      "friends_count": 333,
+      "listed_count": 684,
+      "created_at": "Sun Sep 26 13:36:55 +0000 2010",
+      "favourites_count": 2653,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 12985,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "022330",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme15/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme15/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/484903630424637440/ryM382Au_normal.jpeg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/484903630424637440/ryM382Au_normal.jpeg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/195348872/1355212015",
+      "profile_link_color": "0084B4",
+      "profile_sidebar_border_color": "A8C7F7",
+      "profile_sidebar_fill_color": "C0DFEC",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweet_count": 4,
+    "favorite_count": 1,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": [
+        {
+          "url": "https://t.co/EaKR2OYAyK",
+          "expanded_url": "https://twitter.com/ow/status/586373824129568768",
+          "display_url": "twitter.com/ow/status/5863…",
+          "indices": [
+            100,
+            123
+          ]
+        }
+      ]
+    },
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Fri Apr 10 03:28:46 +0000 2015",
+    "id": 586370208505303042,
+    "id_str": "586370208505303042",
+    "text": "At least I get to watch The Masters stress free this weekend.",
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 45950381,
+      "id_str": "45950381",
+      "name": "Carson Thompson",
+      "screen_name": "muse_guy",
+      "location": "Grand Forks, ND",
+      "profile_location": null,
+      "description": "UND grad, IT guy, father, and Diet Dew addict. Married to @heids4u",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": true,
+      "followers_count": 189,
+      "friends_count": 516,
+      "listed_count": 5,
+      "created_at": "Tue Jun 09 21:31:40 +0000 2009",
+      "favourites_count": 22,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 3014,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme15/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme15/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/581612052042498048/Cg6Zntsw_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/581612052042498048/Cg6Zntsw_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/45950381/1418573405",
+      "profile_link_color": "4A913C",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweet_count": 0,
+    "favorite_count": 1,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Fri Apr 10 03:08:04 +0000 2015",
+    "id": 586364998294773763,
+    "id_str": "586364998294773763",
+    "text": "Stick to the throat and you put both guys in the box???",
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 45950381,
+      "id_str": "45950381",
+      "name": "Carson Thompson",
+      "screen_name": "muse_guy",
+      "location": "Grand Forks, ND",
+      "profile_location": null,
+      "description": "UND grad, IT guy, father, and Diet Dew addict. Married to @heids4u",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": true,
+      "followers_count": 189,
+      "friends_count": 516,
+      "listed_count": 5,
+      "created_at": "Tue Jun 09 21:31:40 +0000 2009",
+      "favourites_count": 22,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 3014,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme15/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme15/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/581612052042498048/Cg6Zntsw_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/581612052042498048/Cg6Zntsw_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/45950381/1418573405",
+      "profile_link_color": "4A913C",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweet_count": 0,
+    "favorite_count": 1,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Fri Apr 10 02:11:17 +0000 2015",
+    "id": 586350710398193664,
+    "id_str": "586350710398193664",
+    "text": "I vote on Twitter's next hack week some folks mash Twitter for Mac style UI with the Android app and release it as a Chrome ARC app.",
+    "source": "<a href=\"http://itunes.apple.com/us/app/twitter/id409789998?mt=12\" rel=\"nofollow\">Twitter for Mac</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 195348872,
+      "id_str": "195348872",
+      "name": "Chris Lacy",
+      "screen_name": "chrismlacy",
+      "location": "Brisbane, Australia",
+      "profile_location": null,
+      "description": "Developer of @ActionLauncher, @Link_Bubble & @TweetLanes. I don't consciously wear a beard, I just rarely bother shaving. DM me, but check Settings-FAQ first.",
+      "url": "https://t.co/ygj7nPgM3a",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/ygj7nPgM3a",
+              "expanded_url": "https://play.google.com/store/apps/developer?id=Chris+Lacy",
+              "display_url": "play.google.com/store/apps/dev…",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 36824,
+      "friends_count": 333,
+      "listed_count": 684,
+      "created_at": "Sun Sep 26 13:36:55 +0000 2010",
+      "favourites_count": 2653,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 12985,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "022330",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme15/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme15/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/484903630424637440/ryM382Au_normal.jpeg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/484903630424637440/ryM382Au_normal.jpeg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/195348872/1355212015",
+      "profile_link_color": "0084B4",
+      "profile_sidebar_border_color": "A8C7F7",
+      "profile_sidebar_fill_color": "C0DFEC",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweet_count": 2,
+    "favorite_count": 7,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Fri Apr 10 01:53:24 +0000 2015",
+    "id": 586346209872252928,
+    "id_str": "586346209872252928",
+    "text": "Congrats to my colleagues on shipping! RT @awscloud: Deploy &amp; manage apps with Amazon WorkSpaces Application Manager. http://t.co/VSvmwNIJ38",
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 14413568,
+      "id_str": "14413568",
+      "name": "Evan Wondrasek",
+      "screen_name": "evanw",
+      "location": "Seattle, WA",
+      "profile_location": null,
+      "description": "Software engineer with an electrical engineering background. Creator of @MarkdownPad. Developer at Amazon Web Services. I like adventures. (It's wun-DRAH-seck.)",
+      "url": "http://t.co/0GRWYrt4v7",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/0GRWYrt4v7",
+              "expanded_url": "http://evanw.com",
+              "display_url": "evanw.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 1292,
+      "friends_count": 849,
+      "listed_count": 93,
+      "created_at": "Wed Apr 16 22:10:43 +0000 2008",
+      "favourites_count": 3068,
+      "utc_offset": -18000,
+      "time_zone": "Central Time (US & Canada)",
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 24061,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/151292951/01861_dreamstream_1680x1050.jpg",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/151292951/01861_dreamstream_1680x1050.jpg",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/378800000120401601/f651c92c9f1f3be236d74dc426613c5c_normal.jpeg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/378800000120401601/f651c92c9f1f3be236d74dc426613c5c_normal.jpeg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/14413568/1427092284",
+      "profile_link_color": "077DE4",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "A0C7FE",
+      "profile_text_color": "000000",
+      "profile_use_background_image": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweet_count": 0,
+    "favorite_count": 1,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "awscloud",
+          "name": "Amazon Web Services",
+          "id": 66780587,
+          "id_str": "66780587",
+          "indices": [
+            42,
+            51
+          ]
+        }
+      ],
+      "urls": [
+        {
+          "url": "http://t.co/VSvmwNIJ38",
+          "expanded_url": "http://oak.ctx.ly/r/2rthr",
+          "display_url": "oak.ctx.ly/r/2rthr",
+          "indices": [
+            122,
+            144
+          ]
+        }
+      ]
+    },
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Fri Apr 10 01:48:27 +0000 2015",
+    "id": 586344964562358274,
+    "id_str": "586344964562358274",
+    "text": "How many posts are we gonna hit? Wow",
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 45950381,
+      "id_str": "45950381",
+      "name": "Carson Thompson",
+      "screen_name": "muse_guy",
+      "location": "Grand Forks, ND",
+      "profile_location": null,
+      "description": "UND grad, IT guy, father, and Diet Dew addict. Married to @heids4u",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": true,
+      "followers_count": 189,
+      "friends_count": 516,
+      "listed_count": 5,
+      "created_at": "Tue Jun 09 21:31:40 +0000 2009",
+      "favourites_count": 22,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 3014,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme15/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme15/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/581612052042498048/Cg6Zntsw_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/581612052042498048/Cg6Zntsw_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/45950381/1418573405",
+      "profile_link_color": "4A913C",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Fri Apr 10 01:33:11 +0000 2015",
+    "id": 586341121304854528,
+    "id_str": "586341121304854528",
+    "text": "LET'S GO!!!!",
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 45950381,
+      "id_str": "45950381",
+      "name": "Carson Thompson",
+      "screen_name": "muse_guy",
+      "location": "Grand Forks, ND",
+      "profile_location": null,
+      "description": "UND grad, IT guy, father, and Diet Dew addict. Married to @heids4u",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": true,
+      "followers_count": 189,
+      "friends_count": 516,
+      "listed_count": 5,
+      "created_at": "Tue Jun 09 21:31:40 +0000 2009",
+      "favourites_count": 22,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 3014,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme15/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme15/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/581612052042498048/Cg6Zntsw_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/581612052042498048/Cg6Zntsw_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/45950381/1418573405",
+      "profile_link_color": "4A913C",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweet_count": 0,
+    "favorite_count": 1,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Fri Apr 10 01:28:34 +0000 2015",
+    "id": 586339959625224192,
+    "id_str": "586339959625224192",
+    "text": "RT @greggawatt: No gravity, no masters. @corbett",
+    "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 143264018,
+      "id_str": "143264018",
+      "name": "Dr. Corbett Moran",
+      "screen_name": "corbett",
+      "location": "Los Angeles",
+      "profile_location": null,
+      "description": "Theoretical Astrophysics Postdoc @Caltech. Physicist, Software Engineer, Maker, Ethicist. Formerly @SpaceX, @MIT. Aspiring astronaut.",
+      "url": "http://t.co/8FnSgchSRm",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/8FnSgchSRm",
+              "expanded_url": "http://christinecorbettmoran.com/",
+              "display_url": "christinecorbettmoran.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 3806,
+      "friends_count": 1061,
+      "listed_count": 221,
+      "created_at": "Thu May 13 01:13:27 +0000 2010",
+      "favourites_count": 5875,
+      "utc_offset": -25200,
+      "time_zone": "Pacific Time (US & Canada)",
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 14795,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "020812",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/195575468/x942ca827eb2d4fe7a5c869a779cb41e.jpg",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/195575468/x942ca827eb2d4fe7a5c869a779cb41e.jpg",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/583705462949810176/_q4350J9_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/583705462949810176/_q4350J9_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/143264018/1428001271",
+      "profile_link_color": "2280A9",
+      "profile_sidebar_border_color": "2280A9",
+      "profile_sidebar_fill_color": "020812",
+      "profile_text_color": "17406C",
+      "profile_use_background_image": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweeted_status": {
+      "created_at": "Fri Apr 10 01:28:26 +0000 2015",
+      "id": 586339926616084480,
+      "id_str": "586339926616084480",
+      "text": "No gravity, no masters. @corbett",
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 14964459,
+        "id_str": "14964459",
+        "name": "Greggacop",
+        "screen_name": "greggawatt",
+        "location": "Oakland, California",
+        "profile_location": null,
+        "description": "Chaotic Neutral. I make Noise and Websites. Listen to me https://t.co/hiqj3xPACu",
+        "url": "http://t.co/QGFynGQemu",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "http://t.co/QGFynGQemu",
+                "expanded_url": "http://gregghorton.com",
+                "display_url": "gregghorton.com",
+                "indices": [
+                  0,
+                  22
+                ]
+              }
+            ]
+          },
+          "description": {
+            "urls": [
+              {
+                "url": "https://t.co/hiqj3xPACu",
+                "expanded_url": "https://soundcloud.com/falsefuture",
+                "display_url": "soundcloud.com/falsefuture",
+                "indices": [
+                  57,
+                  80
+                ]
+              }
+            ]
+          }
+        },
+        "protected": false,
+        "followers_count": 935,
+        "friends_count": 255,
+        "listed_count": 44,
+        "created_at": "Sat May 31 16:50:18 +0000 2008",
+        "favourites_count": 9066,
+        "utc_offset": null,
+        "time_zone": null,
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 13085,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "352726",
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/173236302/128559924519.png",
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/173236302/128559924519.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/542565288768593920/ZSfAmHQ0_normal.jpeg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/542565288768593920/ZSfAmHQ0_normal.jpeg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/14964459/1400445347",
+        "profile_link_color": "0048FF",
+        "profile_sidebar_border_color": "829D5E",
+        "profile_sidebar_fill_color": "99CC33",
+        "profile_text_color": "3E4415",
+        "profile_use_background_image": true,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "retweet_count": 1,
+      "favorite_count": 3,
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [
+          {
+            "screen_name": "corbett",
+            "name": "Dr. Corbett Moran",
+            "id": 143264018,
+            "id_str": "143264018",
+            "indices": [
+              24,
+              32
+            ]
+          }
+        ],
+        "urls": []
+      },
+      "favorited": false,
+      "retweeted": false,
+      "lang": "en"
+    },
+    "retweet_count": 1,
+    "favorite_count": 0,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "greggawatt",
+          "name": "Greggacop",
+          "id": 14964459,
+          "id_str": "14964459",
+          "indices": [
+            3,
+            14
+          ]
+        },
+        {
+          "screen_name": "corbett",
+          "name": "Dr. Corbett Moran",
+          "id": 143264018,
+          "id_str": "143264018",
+          "indices": [
+            40,
+            48
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Fri Apr 10 01:21:36 +0000 2015",
+    "id": 586338203595972608,
+    "id_str": "586338203595972608",
+    "text": "RT @SciencePorn: http://t.co/tzRNWkaQqW",
+    "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 18918415,
+      "id_str": "18918415",
+      "name": "koush",
+      "screen_name": "koush",
+      "location": "Seattle, WA",
+      "profile_location": null,
+      "description": "Founder of ClockworkMod. Creator of AllCast, ROM Manager, and Helium. Crossfitter, olympic lifting junkie. Former pro gamer.",
+      "url": "http://t.co/cw428WFmpa",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/cw428WFmpa",
+              "expanded_url": "http://gplus.to/koush",
+              "display_url": "gplus.to/koush",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 52698,
+      "friends_count": 299,
+      "listed_count": 2325,
+      "created_at": "Mon Jan 12 22:29:54 +0000 2009",
+      "favourites_count": 1671,
+      "utc_offset": -25200,
+      "time_zone": "Pacific Time (US & Canada)",
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 15498,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "EBEBEB",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme7/bg.gif",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme7/bg.gif",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/378800000495697516/988b32f009f49112d4c0a24d2acb381d_normal.jpeg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/378800000495697516/988b32f009f49112d4c0a24d2acb381d_normal.jpeg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/18918415/1398307997",
+      "profile_link_color": "990000",
+      "profile_sidebar_border_color": "DFDFDF",
+      "profile_sidebar_fill_color": "F3F3F3",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweeted_status": {
+      "created_at": "Thu Apr 09 22:39:28 +0000 2015",
+      "id": 586297403315195905,
+      "id_str": "586297403315195905",
+      "text": "http://t.co/tzRNWkaQqW",
+      "source": "<a href=\"http://bufferapp.com\" rel=\"nofollow\">Buffer</a>",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 572225652,
+        "id_str": "572225652",
+        "name": "SciencePorn ",
+        "screen_name": "SciencePorn",
+        "location": "Tellus, Milky Way",
+        "profile_location": null,
+        "description": "Best of Science. Email: oxford(at)scientist(dot)com.",
+        "url": "http://t.co/MoxikReXBI",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "http://t.co/MoxikReXBI",
+                "expanded_url": "http://www.scienceisporn.com",
+                "display_url": "scienceisporn.com",
+                "indices": [
+                  0,
+                  22
+                ]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 1558739,
+        "friends_count": 10476,
+        "listed_count": 9248,
+        "created_at": "Sat May 05 23:20:41 +0000 2012",
+        "favourites_count": 5255,
+        "utc_offset": 3600,
+        "time_zone": "London",
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 4847,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/378800000113576181/f9df41de66c0d657193b0802dfd4f378.jpeg",
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/378800000113576181/f9df41de66c0d657193b0802dfd4f378.jpeg",
+        "profile_background_tile": true,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/577048048359981056/ioapUboH_normal.jpeg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/577048048359981056/ioapUboH_normal.jpeg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/572225652/1426295474",
+        "profile_link_color": "00A375",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "EFEFEF",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "retweet_count": 1521,
+      "favorite_count": 2128,
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": [],
+        "media": [
+          {
+            "id": 586297403243941888,
+            "id_str": "586297403243941888",
+            "indices": [
+              0,
+              22
+            ],
+            "media_url": "http://pbs.twimg.com/media/CCLyYcUW0AALc_s.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/CCLyYcUW0AALc_s.jpg",
+            "url": "http://t.co/tzRNWkaQqW",
+            "display_url": "pic.twitter.com/tzRNWkaQqW",
+            "expanded_url": "http://twitter.com/SciencePorn/status/586297403315195905/photo/1",
+            "type": "photo",
+            "sizes": {
+              "small": {
+                "w": 340,
+                "h": 289,
+                "resize": "fit"
+              },
+              "medium": {
+                "w": 576,
+                "h": 490,
+                "resize": "fit"
+              },
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "large": {
+                "w": 576,
+                "h": 490,
+                "resize": "fit"
+              }
+            }
+          }
+        ]
+      },
+      "extended_entities": {
+        "media": [
+          {
+            "id": 586297403243941888,
+            "id_str": "586297403243941888",
+            "indices": [
+              0,
+              22
+            ],
+            "media_url": "http://pbs.twimg.com/media/CCLyYcUW0AALc_s.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/CCLyYcUW0AALc_s.jpg",
+            "url": "http://t.co/tzRNWkaQqW",
+            "display_url": "pic.twitter.com/tzRNWkaQqW",
+            "expanded_url": "http://twitter.com/SciencePorn/status/586297403315195905/photo/1",
+            "type": "photo",
+            "sizes": {
+              "small": {
+                "w": 340,
+                "h": 289,
+                "resize": "fit"
+              },
+              "medium": {
+                "w": 576,
+                "h": 490,
+                "resize": "fit"
+              },
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "large": {
+                "w": 576,
+                "h": 490,
+                "resize": "fit"
+              }
+            }
+          }
+        ]
+      },
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "und"
+    },
+    "retweet_count": 1521,
+    "favorite_count": 0,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "SciencePorn",
+          "name": "SciencePorn ",
+          "id": 572225652,
+          "id_str": "572225652",
+          "indices": [
+            3,
+            15
+          ]
+        }
+      ],
+      "urls": [],
+      "media": [
+        {
+          "id": 586297403243941888,
+          "id_str": "586297403243941888",
+          "indices": [
+            17,
+            39
+          ],
+          "media_url": "http://pbs.twimg.com/media/CCLyYcUW0AALc_s.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CCLyYcUW0AALc_s.jpg",
+          "url": "http://t.co/tzRNWkaQqW",
+          "display_url": "pic.twitter.com/tzRNWkaQqW",
+          "expanded_url": "http://twitter.com/SciencePorn/status/586297403315195905/photo/1",
+          "type": "photo",
+          "sizes": {
+            "small": {
+              "w": 340,
+              "h": 289,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 576,
+              "h": 490,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 576,
+              "h": 490,
+              "resize": "fit"
+            }
+          },
+          "source_status_id": 586297403315195905,
+          "source_status_id_str": "586297403315195905",
+          "source_user_id": 572225652,
+          "source_user_id_str": "572225652"
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 586297403243941888,
+          "id_str": "586297403243941888",
+          "indices": [
+            17,
+            39
+          ],
+          "media_url": "http://pbs.twimg.com/media/CCLyYcUW0AALc_s.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CCLyYcUW0AALc_s.jpg",
+          "url": "http://t.co/tzRNWkaQqW",
+          "display_url": "pic.twitter.com/tzRNWkaQqW",
+          "expanded_url": "http://twitter.com/SciencePorn/status/586297403315195905/photo/1",
+          "type": "photo",
+          "sizes": {
+            "small": {
+              "w": 340,
+              "h": 289,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 576,
+              "h": 490,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 576,
+              "h": 490,
+              "resize": "fit"
+            }
+          },
+          "source_status_id": 586297403315195905,
+          "source_status_id_str": "586297403315195905",
+          "source_user_id": 572225652,
+          "source_user_id_str": "572225652"
+        }
+      ]
+    },
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "und"
+  },
+  {
+    "created_at": "Fri Apr 10 00:56:31 +0000 2015",
+    "id": 586331893374652416,
+    "id_str": "586331893374652416",
+    "text": "Someone tell @Buccigross it's pronounced KAH-JOO-LA",
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 45950381,
+      "id_str": "45950381",
+      "name": "Carson Thompson",
+      "screen_name": "muse_guy",
+      "location": "Grand Forks, ND",
+      "profile_location": null,
+      "description": "UND grad, IT guy, father, and Diet Dew addict. Married to @heids4u",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": true,
+      "followers_count": 189,
+      "friends_count": 516,
+      "listed_count": 5,
+      "created_at": "Tue Jun 09 21:31:40 +0000 2009",
+      "favourites_count": 22,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 3014,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme15/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme15/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/581612052042498048/Cg6Zntsw_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/581612052042498048/Cg6Zntsw_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/45950381/1418573405",
+      "profile_link_color": "4A913C",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweet_count": 0,
+    "favorite_count": 1,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "Buccigross",
+          "name": "John Buccigross",
+          "id": 43641364,
+          "id_str": "43641364",
+          "indices": [
+            13,
+            24
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Fri Apr 10 00:56:22 +0000 2015",
+    "id": 586331853499432960,
+    "id_str": "586331853499432960",
+    "text": "And here is the radio interview I did for Digital Culture La re:Signal https://t.co/WHJNXUAOOK /cc @FredericJacobs",
+    "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 143264018,
+      "id_str": "143264018",
+      "name": "Dr. Corbett Moran",
+      "screen_name": "corbett",
+      "location": "Los Angeles",
+      "profile_location": null,
+      "description": "Theoretical Astrophysics Postdoc @Caltech. Physicist, Software Engineer, Maker, Ethicist. Formerly @SpaceX, @MIT. Aspiring astronaut.",
+      "url": "http://t.co/8FnSgchSRm",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/8FnSgchSRm",
+              "expanded_url": "http://christinecorbettmoran.com/",
+              "display_url": "christinecorbettmoran.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 3806,
+      "friends_count": 1061,
+      "listed_count": 221,
+      "created_at": "Thu May 13 01:13:27 +0000 2010",
+      "favourites_count": 5875,
+      "utc_offset": -25200,
+      "time_zone": "Pacific Time (US & Canada)",
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 14795,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "020812",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/195575468/x942ca827eb2d4fe7a5c869a779cb41e.jpg",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/195575468/x942ca827eb2d4fe7a5c869a779cb41e.jpg",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/583705462949810176/_q4350J9_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/583705462949810176/_q4350J9_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/143264018/1428001271",
+      "profile_link_color": "2280A9",
+      "profile_sidebar_border_color": "2280A9",
+      "profile_sidebar_fill_color": "020812",
+      "profile_text_color": "17406C",
+      "profile_use_background_image": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweet_count": 2,
+    "favorite_count": 5,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "FredericJacobs",
+          "name": "Frederic Jacobs",
+          "id": 18018877,
+          "id_str": "18018877",
+          "indices": [
+            99,
+            114
+          ]
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://t.co/WHJNXUAOOK",
+          "expanded_url": "https://m.soundcloud.com/digital-culture-la/signal-an-app-that-encrypts-your-text-call-data",
+          "display_url": "m.soundcloud.com/digital-cultur…",
+          "indices": [
+            71,
+            94
+          ]
+        }
+      ]
+    },
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Fri Apr 10 00:35:23 +0000 2015",
+    "id": 586326575345303552,
+    "id_str": "586326575345303552",
+    "text": "Ahhhh I'm nervous. #RollTribe",
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 45950381,
+      "id_str": "45950381",
+      "name": "Carson Thompson",
+      "screen_name": "muse_guy",
+      "location": "Grand Forks, ND",
+      "profile_location": null,
+      "description": "UND grad, IT guy, father, and Diet Dew addict. Married to @heids4u",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": true,
+      "followers_count": 189,
+      "friends_count": 516,
+      "listed_count": 5,
+      "created_at": "Tue Jun 09 21:31:40 +0000 2009",
+      "favourites_count": 22,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 3014,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme15/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme15/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/581612052042498048/Cg6Zntsw_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/581612052042498048/Cg6Zntsw_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/45950381/1418573405",
+      "profile_link_color": "4A913C",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweet_count": 0,
+    "favorite_count": 1,
+    "entities": {
+      "hashtags": [
+        {
+          "text": "RollTribe",
+          "indices": [
+            19,
+            29
+          ]
+        }
+      ],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Fri Apr 10 00:26:01 +0000 2015",
+    "id": 586324219283124224,
+    "id_str": "586324219283124224",
+    "text": "Talking about how using Signal means the NSA sees junk bits instead of bits of your junk /cc John Oliver http://t.co/N4ggJJ9urS",
+    "source": "<a href=\"http://www.apple.com\" rel=\"nofollow\">iOS</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 143264018,
+      "id_str": "143264018",
+      "name": "Dr. Corbett Moran",
+      "screen_name": "corbett",
+      "location": "Los Angeles",
+      "profile_location": null,
+      "description": "Theoretical Astrophysics Postdoc @Caltech. Physicist, Software Engineer, Maker, Ethicist. Formerly @SpaceX, @MIT. Aspiring astronaut.",
+      "url": "http://t.co/8FnSgchSRm",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/8FnSgchSRm",
+              "expanded_url": "http://christinecorbettmoran.com/",
+              "display_url": "christinecorbettmoran.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 3806,
+      "friends_count": 1061,
+      "listed_count": 221,
+      "created_at": "Thu May 13 01:13:27 +0000 2010",
+      "favourites_count": 5875,
+      "utc_offset": -25200,
+      "time_zone": "Pacific Time (US & Canada)",
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 14795,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "020812",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/195575468/x942ca827eb2d4fe7a5c869a779cb41e.jpg",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/195575468/x942ca827eb2d4fe7a5c869a779cb41e.jpg",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/583705462949810176/_q4350J9_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/583705462949810176/_q4350J9_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/143264018/1428001271",
+      "profile_link_color": "2280A9",
+      "profile_sidebar_border_color": "2280A9",
+      "profile_sidebar_fill_color": "020812",
+      "profile_text_color": "17406C",
+      "profile_use_background_image": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweet_count": 9,
+    "favorite_count": 13,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": [
+        {
+          "url": "http://t.co/N4ggJJ9urS",
+          "expanded_url": "http://instagram.com/p/1RhwjYg9P2/",
+          "display_url": "instagram.com/p/1RhwjYg9P2/",
+          "indices": [
+            105,
+            127
+          ]
+        }
+      ]
+    },
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Thu Apr 09 22:54:37 +0000 2015",
+    "id": 586301215660716032,
+    "id_str": "586301215660716032",
+    "text": "What is the single customization you'd most like to see added to Action Launcher 3?",
+    "source": "<a href=\"http://itunes.apple.com/us/app/twitter/id409789998?mt=12\" rel=\"nofollow\">Twitter for Mac</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 195348872,
+      "id_str": "195348872",
+      "name": "Chris Lacy",
+      "screen_name": "chrismlacy",
+      "location": "Brisbane, Australia",
+      "profile_location": null,
+      "description": "Developer of @ActionLauncher, @Link_Bubble & @TweetLanes. I don't consciously wear a beard, I just rarely bother shaving. DM me, but check Settings-FAQ first.",
+      "url": "https://t.co/ygj7nPgM3a",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/ygj7nPgM3a",
+              "expanded_url": "https://play.google.com/store/apps/developer?id=Chris+Lacy",
+              "display_url": "play.google.com/store/apps/dev…",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 36824,
+      "friends_count": 333,
+      "listed_count": 684,
+      "created_at": "Sun Sep 26 13:36:55 +0000 2010",
+      "favourites_count": 2653,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 12985,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "022330",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme15/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme15/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/484903630424637440/ryM382Au_normal.jpeg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/484903630424637440/ryM382Au_normal.jpeg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/195348872/1355212015",
+      "profile_link_color": "0084B4",
+      "profile_sidebar_border_color": "A8C7F7",
+      "profile_sidebar_fill_color": "C0DFEC",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweet_count": 2,
+    "favorite_count": 2,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Thu Apr 09 22:15:48 +0000 2015",
+    "id": 586291446203965440,
+    "id_str": "586291446203965440",
+    "text": "BREAKING: Google want their services used by as many people as possible. http://t.co/ZrgPoMXiMu http://t.co/oxzFVFXeD5",
+    "source": "<a href=\"http://twitter.com/oneshot\" rel=\"nofollow\">OneShot - Take screenshots</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 195348872,
+      "id_str": "195348872",
+      "name": "Chris Lacy",
+      "screen_name": "chrismlacy",
+      "location": "Brisbane, Australia",
+      "profile_location": null,
+      "description": "Developer of @ActionLauncher, @Link_Bubble & @TweetLanes. I don't consciously wear a beard, I just rarely bother shaving. DM me, but check Settings-FAQ first.",
+      "url": "https://t.co/ygj7nPgM3a",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/ygj7nPgM3a",
+              "expanded_url": "https://play.google.com/store/apps/developer?id=Chris+Lacy",
+              "display_url": "play.google.com/store/apps/dev…",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 36824,
+      "friends_count": 333,
+      "listed_count": 684,
+      "created_at": "Sun Sep 26 13:36:55 +0000 2010",
+      "favourites_count": 2653,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 12985,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "022330",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme15/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme15/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/484903630424637440/ryM382Au_normal.jpeg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/484903630424637440/ryM382Au_normal.jpeg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/195348872/1355212015",
+      "profile_link_color": "0084B4",
+      "profile_sidebar_border_color": "A8C7F7",
+      "profile_sidebar_fill_color": "C0DFEC",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweet_count": 3,
+    "favorite_count": 9,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": [
+        {
+          "url": "http://t.co/ZrgPoMXiMu",
+          "expanded_url": "http://www.theverge.com/2015/4/9/8375931/android-wear-iphone-google-apple-compatible",
+          "display_url": "theverge.com/2015/4/9/83759…",
+          "indices": [
+            73,
+            95
+          ]
+        }
+      ],
+      "media": [
+        {
+          "id": 586291440583442432,
+          "id_str": "586291440583442432",
+          "indices": [
+            96,
+            118
+          ],
+          "media_url": "http://pbs.twimg.com/media/CCLs9XrUAAAU6T9.png",
+          "media_url_https": "https://pbs.twimg.com/media/CCLs9XrUAAAU6T9.png",
+          "url": "http://t.co/oxzFVFXeD5",
+          "display_url": "pic.twitter.com/oxzFVFXeD5",
+          "expanded_url": "http://twitter.com/chrismlacy/status/586291446203965440/photo/1",
+          "type": "photo",
+          "sizes": {
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 690,
+              "h": 707,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 600,
+              "h": 614,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 340,
+              "h": 348,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 586291440583442432,
+          "id_str": "586291440583442432",
+          "indices": [
+            96,
+            118
+          ],
+          "media_url": "http://pbs.twimg.com/media/CCLs9XrUAAAU6T9.png",
+          "media_url_https": "https://pbs.twimg.com/media/CCLs9XrUAAAU6T9.png",
+          "url": "http://t.co/oxzFVFXeD5",
+          "display_url": "pic.twitter.com/oxzFVFXeD5",
+          "expanded_url": "http://twitter.com/chrismlacy/status/586291446203965440/photo/1",
+          "type": "photo",
+          "sizes": {
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 690,
+              "h": 707,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 600,
+              "h": 614,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 340,
+              "h": 348,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "en"
+  }
+]
