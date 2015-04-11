@@ -5,7 +5,9 @@ var express = require('express'),
     TwitterStrategy = require('passport-twitter').Strategy,
     cookieParser = require('cookie-parser'),
     ensureLoggedIn = require('connect-ensure-login').ensureLoggedIn,
-    Twitter = require('twitter');
+    Twitter = require('twitter'),
+    flash = require('connect-flash'),
+    bodyParser = require('body-parser');
 
 // Variables
 var app = express();
@@ -17,13 +19,15 @@ app.set('view engine','ejs');
 
 // Use
 app.use(express.static('public'));
+// app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(cookieParser());
 app.use(session({
-  secret: 'im neither hero nor traiter im american',
+  secret: 'im neither hero nor traiter im american - if they wont give us privacy then we must take it',
   resave: false,
   saveUninitialized: true
-})
+}));
+app.use(flash());
 
 // passport.serializeUser(function(user, done) {
 //   done(null, user);
@@ -49,6 +53,10 @@ passport.use(new TwitterStrategy({
   }
 ));
 
-app.listen(3000, function() {
-  console.log('Express server started on port %s', server.address().port);
-})
+// load routes
+app.use('/', require('./controllers/main.js'));
+app.use('/auth', require('./controllers/auth.js'));
+
+var server = app.listen(3000)
+console.log('Express server started on port %s', server.address().port);
+
