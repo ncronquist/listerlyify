@@ -19,6 +19,15 @@ router.get('/listeditor', ensureLoggedIn('/'), function(req,res) {
   client.get('lists/ownerships', function(error, lists, response) {
     if (!error) {
       listgridinfo.lists = lists;
+
+      client.get('friends/list', function(error, friends, response) {
+        if(!error) {
+          listgridinfo.friends = friends;
+          res.send(listgridinfo);
+        } else {
+          res.send('there was an error');
+        }
+      })
     } else {
       res.send('there was an error');
     }
@@ -62,6 +71,9 @@ router.get('/mylists', ensureLoggedIn('/'), function(req,res) {
     }
   })
 })
+
+// Specified list page
+router.get('/lists/:listid')
 
 
 
