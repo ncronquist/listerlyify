@@ -7,7 +7,8 @@ var express = require('express'),
     ensureLoggedIn = require('connect-ensure-login').ensureLoggedIn,
     Twitter = require('twitter'),
     flash = require('connect-flash'),
-    bodyParser = require('body-parser');
+    bodyParser = require('body-parser'),
+    db = require('./models');
 
 // Variables
 var app = express();
@@ -37,15 +38,17 @@ passport.use(new TwitterStrategy({
     callbackURL: "http://127.0.0.1:3000/auth/twitter/callback"
   },
   function(token, tokenSecret, profile, done) {
-    // Create user here
-    // User.findOrCreate(..., function(err, user) {
-    //   if (err) { return done(err); }
-    //   done(null, user);
-    // });
-    var user = profile;
-    user.token = token;
-    user.tokenSecret = tokenSecret;
-    return done(null, user);
+    // Create or update user
+    db.user.upsert({
+      twitter_user_id:profile._json.id_str,
+      screen_name:profile._json.screen_name,
+      name:profile._json.name
+    }).then(function(created) {
+      var user = profile;
+      user.token = token;
+      user.tokenSecret = tokenSecret;
+      return done(null, user);
+    })
   }
 ));
 
@@ -57,11 +60,11 @@ passport.deserializeUser(function(obj, done) {
   done(null, obj);
 });
 
-
 // load routes
 app.use('/', require('./controllers/main.js'));
 app.use('/auth', require('./controllers/auth.js'));
 app.use('/list', require('./controllers/list.js'));
+app.use('/user', require('./controllers/user.js'));
 
 var server = app.listen(3000)
 console.log('Express server started on port %s', server.address().port);

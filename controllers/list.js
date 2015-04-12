@@ -23,7 +23,8 @@ router.get('/listeditor', ensureLoggedIn('/'), function(req,res) {
       client.get('friends/list', function(error, friends, response) {
         if(!error) {
           listgridinfo.friends = friends;
-          res.send(listgridinfo);
+          // res.send(listgridinfo);
+          res.render('list/listeditor', listgridinfo);
         } else {
           res.send('there was an error');
         }
