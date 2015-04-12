@@ -29,7 +29,7 @@ var TWITTER_CONSUMER_SECRET = process.env.TWITTER_CONSUMER_SECRET;
 passport.use(new TwitterStrategy({
     consumerKey: TWITTER_CONSUMER_KEY,
     consumerSecret: TWITTER_CONSUMER_SECRET,
-    callbackURL: "http://127.0.0.1:3000/auth/twitter/callback"
+    callbackURL: "http://127.0.0.1:3001/auth/twitter/callback"
   },
   function(token, tokenSecret, profile, done) {
     // NOTE: You'll probably want to associate the Twitter profile with a
@@ -65,7 +65,7 @@ app.get('/logout',
 app.get('/auth/twitter', passport.authenticate('twitter'));
 app.get('/auth/twitter/callback', passport.authenticate('twitter', { successReturnToOrRedirect: '/', failureRedirect: '/login' }));
 
-app.get('/auth/twitter/lists/list', passport.authenticate())
+// app.get('/auth/twitter/lists/list', passport.authenticate())
 
 
 app.get('/auth/twitter/status', function(req,res) {
@@ -107,5 +107,5 @@ app.get('/auth/twitter/lists', function(req,res) {
 })
 
 
-var server = app.listen(3000);
+var server = app.listen(3001);
 console.log('Express server started on port %s', server.address().port);

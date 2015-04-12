@@ -7,9 +7,10 @@ var router = express.Router();
 // Home page - GET /
 router.get('/', function(req,res) {
   // Get potential alert messages
-  var alerts = req.flash();
+  // var alerts = req.flash();
 
-  res.render('main/index', {alerts:alerts});
+  res.render('main/index');
+  // res.render('main/index', {alerts:alerts});
 });
 
 

@@ -28,14 +28,8 @@ app.use(session({
   saveUninitialized: true
 }));
 app.use(flash());
-
-// passport.serializeUser(function(user, done) {
-//   done(null, user);
-// });
-
-// passport.deserializeUser(function(obj, done) {
-//   done(null, obj);
-// });
+app.use(passport.initialize());
+app.use(passport.session());
 
 passport.use(new TwitterStrategy({
     consumerKey: TWITTER_CONSUMER_KEY,
@@ -49,13 +43,25 @@ passport.use(new TwitterStrategy({
     //   done(null, user);
     // });
     var user = profile;
+    user.token = token;
+    user.tokenSecret = tokenSecret;
     return done(null, user);
   }
 ));
 
+passport.serializeUser(function(user, done) {
+  done(null, user);
+});
+
+passport.deserializeUser(function(obj, done) {
+  done(null, obj);
+});
+
+
 // load routes
 app.use('/', require('./controllers/main.js'));
 app.use('/auth', require('./controllers/auth.js'));
+app.use('/list', require('./controllers/list.js'));
 
 var server = app.listen(3000)
 console.log('Express server started on port %s', server.address().port);
