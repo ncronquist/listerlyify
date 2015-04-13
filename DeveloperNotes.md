@@ -20,3 +20,21 @@ My app is **not** for:
 # Random Notes
 - process.env - returns environment variables
 - foreman run node index.js
+
+
+
+// in user model
+
+models.user.hasMany(models.list, {as: 'Followings', through: 'listsusers'})
+
+user.followings = [an array of lists]
+user.getFollowings()
+user.createFollowings()
+
+// in list model
+models.list.belongsToMany(models.user, {as: 'Followers', through:'listusers'})
+
+list.getFollowers()
+list.addFollower()
+
+list.followers = [array of users following this item]

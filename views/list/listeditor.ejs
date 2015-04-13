@@ -38,12 +38,26 @@
 <table id="listgrideditor" class="display" width="100%" cellspacing="0">
   <thead>
     <tr>
+      <td></td>
       <% lists.lists.forEach(function(list, idx, array) { %>
         <td><%=list.name%></td>
       <% }) %>
 
     </tr>
   </thead>
+
+  <tbody>
+    <% friends.users.forEach(function(friend, idx, array) { %>
+      <tr>
+        <td><img src="<%=friend.profile_image_url%>" class="img-responsive" alt="Image"></td>
+        <% for(var i = 0; i < lists.lists.length; i++) { %>
+          <td>x</td>
+        <% } %>
+      </tr>
+    <% }) %>
+  </tbody>
 </table>
+
+
 
 <% include ../partials/footer %>
