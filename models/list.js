@@ -1,7 +1,7 @@
 "use strict";
 module.exports = function(sequelize, DataTypes) {
   var list = sequelize.define("list", {
-    twitter_list_id: DataTypes.STRING,
+    twitter_list_id: {type: DataTypes.STRING, unique: true},
     slug: DataTypes.STRING,
     name: DataTypes.STRING,
     uri: DataTypes.STRING,
@@ -10,13 +10,13 @@ module.exports = function(sequelize, DataTypes) {
     member_count: DataTypes.INTEGER,
     subscriber_count: DataTypes.INTEGER,
     twitter_user_id: DataTypes.STRING,
-    owner_id: DataTypes.INTEGER
-  }, {
+    user_id: DataTypes.INTEGER
+  }, {underscored: true}, {
     classMethods: {
       associate: function(models) {
         // associations can be defined here
-        models.list.hasMany(models.user);
-        models.list.belongsTo(models.user);
+        list.belongsTo(user);
+        list.hasMany(comment);
       }
     }
   });

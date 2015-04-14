@@ -8,12 +8,15 @@ var express = require('express'),
     Twitter = require('twitter'),
     flash = require('connect-flash'),
     bodyParser = require('body-parser'),
+    Sequelize = require('sequelize'),
     db = require('./models');
 
 // Variables
 var app = express();
 var TWITTER_CONSUMER_KEY = process.env.TWITTER_CONSUMER_KEY;
 var TWITTER_CONSUMER_SECRET = process.env.TWITTER_CONSUMER_SECRET;
+var NODE_ENV = process.env.NODE_ENV || 'development';
+var BASE_URL = (NODE_ENV === 'production') ? 'https://something.herokuapps.com' : 'http://127.0.0.1:3000';
 
 // Set
 app.set('view engine','ejs');
@@ -35,7 +38,7 @@ app.use(passport.session());
 passport.use(new TwitterStrategy({
     consumerKey: TWITTER_CONSUMER_KEY,
     consumerSecret: TWITTER_CONSUMER_SECRET,
-    callbackURL: "http://127.0.0.1:3000/auth/twitter/callback"
+    callbackURL: BASE_URL + '/auth/callback/twitter'
   },
   function(token, tokenSecret, profile, done) {
     // Create or update user
@@ -59,6 +62,12 @@ passport.serializeUser(function(user, done) {
 passport.deserializeUser(function(obj, done) {
   done(null, obj);
 });
+
+// This function will load flash messages to the res for every page
+app.use(function(req,res,next) {
+  res.locals.alerts = req.flash();
+  next();
+})
 
 // load routes
 app.use('/', require('./controllers/main.js'));

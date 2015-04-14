@@ -17,7 +17,7 @@ router.get('/twitter', passport.authenticate('twitter'));
 // authentication process by attempting to obtain an access token.  If
 // access was granted, the user will be logged in.  Otherwise,
 // authentication has failed.
-router.get('/twitter/callback', passport.authenticate('twitter', {
+router.get('/callback/twitter', passport.authenticate('twitter', {
     successReturnToOrRedirect: '/list/listeditor',
     failureRedirect: '/auth/failure'
   })

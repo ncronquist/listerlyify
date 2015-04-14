@@ -16,11 +16,13 @@ router.get('/listeditor', ensureLoggedIn('/'), function(req,res) {
     access_token_secret: req.user.tokenSecret
   });
 
-  client.get('lists/ownerships', function(error, lists, response) {
+  var ownership_params = {count: 1000};
+  client.get('lists/ownerships', ownership_params, function(error, lists, response) {
     if (!error) {
       listgridinfo.lists = lists;
 
-      client.get('friends/list', function(error, friends, response) {
+      var friends_params = {count: 200, skip_status: true, include_user_entities: false};
+      client.get('friends/list', friends_params, function(error, friends, response) {
         if(!error) {
           listgridinfo.friends = friends;
           // res.send(listgridinfo);

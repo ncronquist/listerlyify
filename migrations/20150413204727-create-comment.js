@@ -1,33 +1,33 @@
 "use strict";
 module.exports = {
   up: function(migration, DataTypes, done) {
-    migration.createTable("users", {
+    migration.createTable("comments", {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: DataTypes.INTEGER
       },
-      twitter_user_id: {
-        type: DataTypes.STRING
+      comment: {
+        type: DataTypes.TEXT
       },
-      screen_name: {
-        type: DataTypes.STRING
+      user_id: {
+        type: DataTypes.INTEGER
       },
-      name: {
-        type: DataTypes.STRING
+      list_id: {
+        type: DataTypes.INTEGER
       },
-      createdAt: {
+      created_at: {
         allowNull: false,
         type: DataTypes.DATE
       },
-      updatedAt: {
+      updated_at: {
         allowNull: false,
         type: DataTypes.DATE
       }
     }).done(done);
   },
   down: function(migration, DataTypes, done) {
-    migration.dropTable("users").done(done);
+    migration.dropTable("comments").done(done);
   }
 };

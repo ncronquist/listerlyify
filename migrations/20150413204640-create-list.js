@@ -9,7 +9,8 @@ module.exports = {
         type: DataTypes.INTEGER
       },
       twitter_list_id: {
-        type: DataTypes.STRING
+        type: DataTypes.STRING,
+        unique: true
       },
       slug: {
         type: DataTypes.STRING
@@ -35,14 +36,14 @@ module.exports = {
       twitter_user_id: {
         type: DataTypes.STRING
       },
-      owner_id: {
+      user_id: {
         type: DataTypes.INTEGER
       },
-      createdAt: {
+      created_at: {
         allowNull: false,
         type: DataTypes.DATE
       },
-      updatedAt: {
+      updated_at: {
         allowNull: false,
         type: DataTypes.DATE
       }
