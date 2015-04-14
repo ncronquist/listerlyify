@@ -24,7 +24,18 @@
           <tr>
             <td><img src="<%=friend.profile_image_url%>" class="img-responsive" alt="Image"><%=friend.screen_name%></td>
             <% for(var i = 0; i < lists.lists.length; i++) { %>
-              <td>x</td>
+              <% var member = false; %>
+              <% for(var j = 0; j < listmembers[i].members.users.length; j++) { %>
+                <% if(listmembers[i].members.users[j].id_str === friend.id_str) { %>
+                  <td>x</td>
+                  <% member = true; %>
+                  <% break; %>
+                <% } %>
+              <% } %>
+              <% if(!member) { %>
+                <td>o</td>
+              <% } %>
+              <!-- <td>x</td> -->
             <% } %>
           </tr>
         <% }) %>

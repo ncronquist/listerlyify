@@ -54,8 +54,8 @@ router.get('/listeditor', ensureLoggedIn('/'), function(req,res) {
         client.get('friends/list', friends_params, function(error, friends, response) {
           if(!error) {
             listgridinfo.friends = friends;
-            res.send(listgridinfo);
-            // res.render('list/listeditor', listgridinfo);
+            // res.send(listgridinfo);
+            res.render('list/listeditor', listgridinfo);
           } else {
             res.send('there was an error');
           }
@@ -107,6 +107,25 @@ router.get('/mylists', ensureLoggedIn('/'), function(req,res) {
 
 // Specified list page
 router.get('/lists/:listid')
+
+// Add a new member to a list
+router.post('/addmember', function(req,res) {
+  var client = new Twitter({
+    consumer_key: process.env.TWITTER_CONSUMER_KEY,
+    consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
+    access_token_key: req.user.token,
+    access_token_secret: req.user.tokenSecret
+  });
+
+  var create_params = {list_id: some_list_id, user_id: some_use_id}
+  client.get('lists/members/create', create_params, function(error, member, response) {
+    if (!error) {
+      res.send(member);
+    } else {
+      res.send('error');
+    }
+  })
+})
 
 
 

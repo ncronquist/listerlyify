@@ -19,6 +19,11 @@ $(function(){
     top: true
   });
 
-  new $.fn.dataTable.ColReorder( table );
+  // new $.fn.dataTable.ColReorder( table );
+
+  // Click function for each square in my table
+  $('#listgrideditor').on('click', function(e) {
+    console.log(e.target)
+  })
 
 });
