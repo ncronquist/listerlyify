@@ -80,7 +80,7 @@ app.use(function(req,res,next) {
 app.use(function(req,res,next){
     var luser = req.getUser();
     res.locals.luser = luser;
-    console.log(luser);
+    // console.log(luser);
     next();
 })
 

@@ -1,30 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Listerlyify</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <!-- STYLESHEETS -->
-    <!-- Boostrap CSS -->
+    <title>Listerlyify</title>
+
+    <!-- Bootstrap Core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
     <!-- DataTables CSS -->
     <link href="https://cdn.datatables.net/1.10.6/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
-    <!-- DataTables ColReorder CSS -->
-    <!-- <link href="https://cdn.datatables.net/colreorder/1.1.3/css/dataTables.colReorder.css" rel="stylesheet" type="text/css"> -->
-    <!-- DataTables ColVis CSS -->
-    <!-- <link href="https://cdn.datatables.net/colvis/1.1.2/css/dataTables.colVis.css" rel="stylesheet" type="text/css"> -->
-    <!-- DataTables FixedHeader CSS -->
-    <!-- <link href="https://cdn.datatables.net/fixedheader/2.1.2/css/dataTables.fixedHeader.css" rel="stylesheet" type="text/css"> -->
     <!-- DataTables Fixed Columns CSS -->
     <link href="https://cdn.datatables.net/fixedcolumns/3.0.4/css/dataTables.fixedColumns.css" rel="stylesheet" type="text/css">
-    <!-- DataTables Bootstap Theme -->
-    <!-- <link href="https://cdn.datatables.net/plug-ins/1.10.6/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet" type="text/css"> -->
     <!-- Local CSS -->
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <!-- Custom CSS -->
+    <link href="/css/landing-page.css" rel="stylesheet">
 
-  <!-- SCRIPTS -->
+    <!-- Custom Fonts -->
+    <!-- <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <link href="/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- SCRIPTS -->
     <!-- jQuery -->
     <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
     <!-- Boostrap JS -->
@@ -45,45 +55,49 @@
     <script src="/js/script.js"></script>
 
 </head>
+
 <body>
 
-  <nav class="navbar navbar-default" role="navigation">
-    <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="/">Listerlyify</a>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="/list/shared" class="padtop">Browse Shared Lists</a></li>
-          <!-- <li><p><%#user.token%></p></li> -->
-          <% if(!luser) { %>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="/auth/twitter" class="btn btn-primary">Login with Twitter</a>
-                  </li>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="/">Listerlyify</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- <li>
+                        <a href="#about">About</a>
+                    </li> -->
+                    <li>
+                        <a href="#services">Browse Lists</a>
+                    </li>
+                    <% if(luser) { %>
+                        <li>
+                            <a href="/list/listeditor">Edit Lists</a>
+                        </li>
+                        <li>
+                            <a href="/auth/logout">Logout</a>
+                        </li>
+                        <li>
+                            <img src="<%=luser._json.profile_image_url%>" class="img-responsive" alt="Image">
+                        </li>
+                    <% } else { %>
+                        <li>
+                            <a href="/auth/twitter" class="btn btn-default btn-xs"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Login with Twitter</span></a>
+                        </li>
+                    <% } %>
                 </ul>
-            </li>
-          <% } else { %>
-            <li><a href="/list/listeditor" class="padtop">Edit Lists</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="<%=luser._json.profile_image_url%>" class="img-responsive" alt="Image"></a>
-                <ul class="dropdown-menu">
-                  <li class="divider"></li>
-                  <li><a href="/auth/logout">Logout</a></li>
-                </ul>
-            </li>
-          <% } %>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-  </nav>
-
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>

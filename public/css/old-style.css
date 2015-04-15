@@ -1,0 +1,88 @@
+body {
+  background-color: #CBEFFB;
+  overflow-x: hidden;
+}
+
+th.blank {
+  background-color: #CBEFFB;
+}
+td.following {
+  width: 200px;
+}
+
+form.member .form-group {
+  margin-bottom: 5px;
+}
+
+.navbar {
+  font-size: 125%;
+}
+
+.navbar-nav>li>a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.navbar-nav>li>a.padtop {
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a.btn-primary {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a.btn-primary:hover {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #2FC2EF;
+}
+
+/*.table>tbody>tr>td {
+  vertical-align: middle;
+}
+*/
+
+.table td {
+  vertical-align: middle;
+}
+
+.glyph {
+  border: none;
+  background: none;
+}
+
+.glyphicon {
+  font-size: 150%;
+  color: #DADADA;
+}
+
+.glyphicon:hover {
+  font-size: 200%;
+}
+.glyphicon.green {
+  color: green;
+}
+
+button:focus {
+    outline: none;
+}
+
+.sl {
+  float: left;
+  margin-left: 10px;
+}
+
+.navbar-nav>li>.dropdown-menu {
+  padding: 10px 10px 10px 10px;
+}
+
+form.dropdown-menu input {
+  min-width: 250px;
+}
