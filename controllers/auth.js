@@ -23,6 +23,12 @@ router.get('/callback/twitter', passport.authenticate('twitter', {
   })
 );
 
+// Logout
+router.get('/logout', function(req, res){
+  req.logout();
+  req.flash('information', 'You have successfully logged out.');
+  res.redirect('/');
+});
 
 
 // Export
