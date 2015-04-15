@@ -37,20 +37,20 @@ $(function(){
     console.log('Action:', url);
     console.log('Form Data:', data);
 
-    $.ajax({
-      method: method,
-      url: url,
-      data: data
-    }).done(function(data) {
-      console.log(data);
-      if(method==='POST') {
-        form.find('.glyphicon').addClass('green');
-        form.attr('method') = 'DELETE';
-      } else {
-        form.find('.glyphicon').removeClass('green');
-        form.attr('method') = 'POST';
-      }
-    })
+    // $.ajax({
+    //   method: method,
+    //   url: url,
+    //   data: data
+    // }).done(function(data) {
+    //   console.log(data);
+    //   if(method==='POST') {
+    //     form.find('.glyphicon').addClass('green');
+    //     form.attr('method') = 'DELETE';
+    //   } else {
+    //     form.find('.glyphicon').removeClass('green');
+    //     form.attr('method') = 'POST';
+    //   }
+    // })
   })
 
 });

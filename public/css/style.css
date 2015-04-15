@@ -10,11 +10,12 @@ body {
   border: none;
   background: none;
   font-size: 150%;
+  color: #DADADA;
 }
 
 .glyph:hover {
-  font-size: 180%;
+  font-size: 200%;
 }
-.green {
+.glyph .green {
   color: green;
 }

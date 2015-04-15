@@ -39,7 +39,6 @@ router.get('/listeditor', ensureLoggedIn('/'), function(req,res) {
             res.send('There was an error trying to get list members');
           }
         })
-        // return doneCallback(null, num * num);
       };
 
       // Square each number in the array [1, 2, 3, 4]
@@ -117,7 +116,8 @@ router.post('/member', function(req,res) {
     access_token_secret: req.user.tokenSecret
   });
 
-  var create_params = {list_id: some_list_id, user_id: some_use_id}
+  console.log("Req.body for posting new member to list: \n", req.body);
+  var create_params = req.body;
   client.get('lists/members/create', create_params, function(error, member, response) {
     if (!error) {
       res.send(member);
