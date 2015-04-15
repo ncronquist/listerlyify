@@ -9,13 +9,24 @@ body {
 .glyph {
   border: none;
   background: none;
+}
+
+.glyphicon {
   font-size: 150%;
   color: #DADADA;
 }
 
-.glyph:hover {
+.glyphicon:hover {
   font-size: 200%;
 }
-.glyph .green {
+.glyphicon.green {
   color: green;
+}
+
+button:focus {
+    outline: none;
+}
+
+.sl {
+  float: left;
 }

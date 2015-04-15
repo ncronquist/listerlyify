@@ -108,7 +108,7 @@ router.get('/mylists', ensureLoggedIn('/'), function(req,res) {
 router.get('/lists/:listid')
 
 // Add a new member to a list
-router.post('/member', function(req,res) {
+router.post('/member/add', function(req,res) {
   var client = new Twitter({
     consumer_key: process.env.TWITTER_CONSUMER_KEY,
     consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
@@ -118,18 +118,33 @@ router.post('/member', function(req,res) {
 
   console.log("Req.body for posting new member to list: \n", req.body);
   var create_params = req.body;
-  client.get('lists/members/create', create_params, function(error, member, response) {
+  client.post('lists/members/create', create_params, function(error, list, response) {
     if (!error) {
-      res.send(member);
+      res.send(list);
     } else {
-      res.send('error');
+      res.send(error);
     }
   })
 })
 
 // Remove a member from a list
-router.delete('/member', function(req,res) {
+router.post('/member/remove', function(req,res) {
+  var client = new Twitter({
+    consumer_key: process.env.TWITTER_CONSUMER_KEY,
+    consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
+    access_token_key: req.user.token,
+    access_token_secret: req.user.tokenSecret
+  });
 
+  console.log("Req.body for removing member from list: \n", req.body);
+  var remove_params = req.body;
+  client.post('lists/members/destroy', remove_params, function(error, list, response) {
+    if (!error) {
+      res.send(list);
+    } else {
+      res.send(error);
+    }
+  })
 })
 
 

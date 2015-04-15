@@ -1,14 +1,11 @@
 <% include ../partials/header %>
 
-<div class="text-center">
-  <h1>Listerlyify</h1>
-  <h4>Make Twitter Lists Awesome</h4>
-</div>
+<% include ../partials/alerts %>
 
 <div class="row">
   <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1">
-<!--     class="display" width="100%" cellspacing="0"-->
-    <table id="listgrideditor" class="table table-striped table-hover table-condensed" width="100%" cellspacing="0">
+    <!-- bootstrap classes = table table-striped table-hover table-condensed -->
+    <table id="listgrideditor" class="display compact" width="100%" cellspacing="0">
       <thead>
         <tr>
           <th></th>
@@ -22,13 +19,13 @@
       <tbody>
         <% friends.users.forEach(function(friend, idx, array) { %>
           <tr>
-            <td><img src="<%=friend.profile_image_url%>" class="img-responsive" alt="Image"><%=friend.screen_name%></td>
+            <td><img src="<%=friend.profile_image_url%>" class="img-responsive sl" alt="Image"><span class="sl"><%=friend.screen_name%></span></td>
             <% for(var i = 0; i < lists.lists.length; i++) { %>
               <% var member = false; %>
               <% for(var j = 0; j < listmembers[i].members.users.length; j++) { %>
                 <% if(listmembers[i].members.users[j].id_str === friend.id_str) { %>
                   <td>
-                    <form action="/list/member" method="DELETE" class="form-horizontal member" role="form">
+                    <form action="/list/member/remove" method="POST" class="form-horizontal member" role="form">
                       <div class="form-group">
                         <input type="hidden" name="list_id" id="list_id" value="<%=lists.lists[i].id%>">
                         <input type="hidden" name="user_id" id="user_id" value="<%=friend.id%>">
@@ -44,7 +41,7 @@
               <% } %>
               <% if(!member) { %>
                 <td>
-                  <form action="/list/member" method="POST" class="form-horizontal member" role="form">
+                  <form action="/list/member/add" method="POST" class="form-horizontal member" role="form">
                     <div class="form-group">
                       <input type="hidden" name="list_id" id="list_id" value="<%=lists.lists[i].id%>">
                       <input type="hidden" name="user_id" id="user_id" value="<%=friend.id%>">
