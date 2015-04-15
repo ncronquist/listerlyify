@@ -5,7 +5,7 @@ $(function(){
   console.log('listeditor DOM: loaded');
 
   var table = $('#listgrideditor').DataTable({
-    "scrollY": 650,
+    "scrollY": 590,
     "scrollX": "100%"
   });
 

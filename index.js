@@ -69,6 +69,21 @@ app.use(function(req,res,next) {
   next();
 })
 
+// Customer middleware - is user logged in
+app.use(function(req,res,next) {
+  req.getUser = function() {
+    return req.user || false;
+  }
+  next();
+})
+
+app.use(function(req,res,next){
+    var luser = req.getUser();
+    res.locals.luser = luser;
+    console.log(luser);
+    next();
+})
+
 // load routes
 app.use('/', require('./controllers/main.js'));
 app.use('/auth', require('./controllers/auth.js'));

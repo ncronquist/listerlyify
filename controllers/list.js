@@ -45,8 +45,8 @@ router.get('/listeditor', ensureLoggedIn('/'), function(req,res) {
       async.map(listArray, listmembers, function (err, results) {
         // Square has been called on each of the numbers
         // so we're now done!
-        console.log("Finished!");
-        console.log(results);
+        // console.log("Finished!");
+        // console.log(results);
         listgridinfo.listmembers = results;
 
         var friends_params = {count: 200, skip_status: true, include_user_entities: false};

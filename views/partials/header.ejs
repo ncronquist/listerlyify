@@ -61,34 +61,29 @@
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="/favorites">Favorites</a></li>
-        </ul>
-        <%# if(!luser) { %>
-          <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/list/shared" class="padtop">Browse Shared Lists</a></li>
+          <!-- <li><p><%#user.token%></p></li> -->
+          <% if(!luser) { %>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login <b class="caret"></b></a>
-                <form class="dropdown-menu" action="/auth/login" method="post">
-                  <div class="form-group">
-                    <input type="text" name="email" id="email" class="form-control" placeholder="Email">
-                    <input type="password" name="password" class="form-control" placeholder="Password">
-                  </div>
-                  <button type="submit" class="btn btn-primary">Login</button>
-                  <a href="/auth/signup" class="pull-right">Sign Up</a>
-                </form>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="/auth/twitter" class="btn btn-primary">Login with Twitter</a>
+                  </li>
+                </ul>
             </li>
-          </ul>
-        <%# } else { %>
-<!--           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/auth/logout">Logout</a></li>
-          </ul> -->
-        <%# } %>
-        <form class="navbar-form navbar-right" action="/movies" method="get" role="search">
-          <div class="form-group">
-            <input type="text" name="q" class="form-control" placeholder="Search for a movie">
-          </div>
-          <input type="submit" value="Search" class="btn btn-primary">
-        </form>
+          <% } else { %>
+            <li><a href="/list/listeditor" class="padtop">Edit Lists</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="<%=luser._json.profile_image_url%>" class="img-responsive" alt="Image"></a>
+                <ul class="dropdown-menu">
+                  <li class="divider"></li>
+                  <li><a href="/auth/logout">Logout</a></li>
+                </ul>
+            </li>
+          <% } %>
+        </ul>
       </div><!-- /.navbar-collapse -->
   </nav>
 
