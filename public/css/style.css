@@ -2,10 +2,19 @@ body {
 /*  background-color: #E5E5E5;*/
 }
 
-div.dataTables_wrapper {
-  /*width: 150%;*/
+.table>tbody>tr>td {
+  vertical-align: middle;
 }
 
-div.FixedHeader_Cloned.fixedLeft tbody td {
-/*  border-right: 1px solid black;*/
+.glyph {
+  border: none;
+  background: none;
+  font-size: 150%;
+}
+
+.glyph:hover {
+  font-size: 180%;
+}
+.green {
+  color: green;
 }

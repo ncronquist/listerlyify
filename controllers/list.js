@@ -109,7 +109,7 @@ router.get('/mylists', ensureLoggedIn('/'), function(req,res) {
 router.get('/lists/:listid')
 
 // Add a new member to a list
-router.post('/addmember', function(req,res) {
+router.post('/member', function(req,res) {
   var client = new Twitter({
     consumer_key: process.env.TWITTER_CONSUMER_KEY,
     consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
@@ -125,6 +125,11 @@ router.post('/addmember', function(req,res) {
       res.send('error');
     }
   })
+})
+
+// Remove a member from a list
+router.delete('/member', function(req,res) {
+
 })
 
 

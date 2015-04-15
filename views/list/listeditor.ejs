@@ -27,15 +27,30 @@
               <% var member = false; %>
               <% for(var j = 0; j < listmembers[i].members.users.length; j++) { %>
                 <% if(listmembers[i].members.users[j].id_str === friend.id_str) { %>
-                  <td>x</td>
+                  <td>
+                    <form action="/list/member" method="DELETE" class="form-horizontal member" role="form">
+                      <div class="form-group text-center">
+                        <button class="glyph" type="submit"><span class="glyphicon glyphicon-ok green"></span></button>
+                      </div>
+                    </form>
+                  </td>
                   <% member = true; %>
                   <% break; %>
                 <% } %>
               <% } %>
               <% if(!member) { %>
-                <td>o</td>
+                <td>
+                  <form action="/list/member" method="POST" class="form-horizontal member" role="form">
+                    <div class="form-group">
+                      <input type="hidden" name="list_id" id="list_id" value="<%=### PUT LIST ID HERE ###%>">
+                      <input type="hidden" name="user_id" id="user_id" value="<%=### PUT USER ID HERE ###%>">
+                    </div>
+                    <div class="form-group text-center">
+                      <button class="glyph" type="submit"><span class="glyphicon glyphicon-ok"></span></button>
+                    </div>
+                  </form>
+                </td>
               <% } %>
-              <!-- <td>x</td> -->
             <% } %>
           </tr>
         <% }) %>
