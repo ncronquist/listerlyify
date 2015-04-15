@@ -19,7 +19,7 @@
       <tbody>
         <% friends.users.forEach(function(friend, idx, array) { %>
           <tr>
-            <td><img src="<%=friend.profile_image_url%>" class="img-responsive sl" alt="Image"><span class="sl"><%=friend.screen_name%></span></td>
+            <td class="following"><img src="<%=friend.profile_image_url%>" class="img-responsive sl" alt="Image"><span class="sl"><%=friend.screen_name%></span></td>
             <% for(var i = 0; i < lists.lists.length; i++) { %>
               <% var member = false; %>
               <% for(var j = 0; j < listmembers[i].members.users.length; j++) { %>
