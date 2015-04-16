@@ -4,8 +4,56 @@
 
 <div class="header-space"></div>
 <div class="row">
-  <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1">
-    <!-- placeholder for button to call modal add list form -->
+  <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 text-center">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newList">Create List</button>
+    <div class="modal fade" id="newList">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title text-center">Create a New List</h4>
+          </div>
+          <div class="modal-body">
+            <form action="/list/create" method="POST" class="form-horizontal" role="form">
+
+                <div class="form-group">
+                  <label for="inputListName" class="col-sm-2 control-label">List Name</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" name="name" id="inputListName" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputListDescription" class="col-sm-2 control-label">Description</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" name="description" id="inputListDescription" placeholder="">
+                  </div>
+                </div>
+
+                <h4>Privacy</h4>
+                <div class="form-group">
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="mode" id="optionsRadios1" value="public" checked>
+                      Public - anyone can follow this list
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="mode" id="optionsRadios2" value="private">
+                      Private - only you can access this list
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form-group text-center">
+                  <button type="submit" class="btn btn-primary">Save List</button>
+                </div>
+            </form>
+
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
   </div>
 </div>
 <div class="row">
@@ -25,7 +73,12 @@
       <tbody>
         <% friends.users.forEach(function(friend, idx, array) { %>
           <tr>
-            <td class="following"><img src="<%=friend.profile_image_url%>" class="img-responsive sl" alt="Image"><span class="sl"><%=friend.screen_name%></span></td>
+            <td class="following">
+              <div>
+                <img src="<%=friend.profile_image_url%>" class="img-responsive sl" alt="Image">
+                <span class="sl"><%=friend.screen_name%></span>
+              </div>
+            </td>
             <% for(var i = 0; i < lists.lists.length; i++) { %>
               <% var member = false; %>
               <% for(var j = 0; j < listmembers[i].members.users.length; j++) { %>

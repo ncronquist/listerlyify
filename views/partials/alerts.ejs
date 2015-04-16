@@ -1,7 +1,13 @@
 <% if(typeof alerts !== 'undefined'){ %>
     <% for(key in alerts){ %>
         <% alerts[key].forEach(function(thisMsg){ %>
-            <div class="alert alert-<%= key %>"><%= thisMsg %></div>
+            <div class="row">
+              <div class="text-center">
+                <div class="alert alert-<%= key %> alert-dismissible col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1" role="alert"><%= thisMsg %>
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+              </div>
+            </div>
         <% }); %>
     <% } %>
 <% } %>

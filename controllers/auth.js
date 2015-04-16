@@ -18,7 +18,7 @@ router.get('/twitter', passport.authenticate('twitter'));
 // access was granted, the user will be logged in.  Otherwise,
 // authentication has failed.
 router.get('/callback/twitter', passport.authenticate('twitter', {
-    successReturnToOrRedirect: '/list/listeditor',
+    successReturnToOrRedirect: '/',
     failureRedirect: '/auth/failure'
   })
 );
@@ -26,7 +26,7 @@ router.get('/callback/twitter', passport.authenticate('twitter', {
 // Logout
 router.get('/logout', function(req, res){
   req.logout();
-  req.flash('information', 'You have successfully logged out.');
+  req.flash('info', 'You have successfully logged out.');
   res.redirect('/');
 });
 

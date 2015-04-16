@@ -147,6 +147,26 @@ router.post('/member/remove', function(req,res) {
   })
 })
 
+// Create a list
+router.post('/create', function(req,res) {
+  var client = new Twitter({
+    consumer_key: process.env.TWITTER_CONSUMER_KEY,
+    consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
+    access_token_key: req.user.token,
+    access_token_secret: req.user.tokenSecret
+  });
+
+  console.log("Req.body for creating a new list: \n", req.body);
+  var list_params = req.body;
+  client.post('lists/create', list_params, function(error, list, response) {
+    if (!error) {
+      res.redirect('/list/listeditor');
+    } else {
+      res.send(error);
+    }
+  })
+})
+
 
 
 // Export
