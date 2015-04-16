@@ -30,37 +30,82 @@
         <!-- ### TODO: Add check here ### -->
         <tr>
           <td>
+            <% if(shared) { %>
+                <form id="fmShareList" action="/list/share" method="POST" class="form-horizontal fmShareList" role="form" style="display:none;">
+                  <div class="form-group">
+                    <input type="hidden" name="twitter_list_id" id="inputList_id" class="form-control" value="<%=list.id%>">
+                    <input type="hidden" name="slug" id="slug" class="form-control" value="<%=list.slug%>">
+                    <input type="hidden" name="name" id="name" class="form-control" value="<%=list.name%>">
+                    <input type="hidden" name="uri" id="uri" class="form-control" value="<%=list.uri%>">
+                    <input type="hidden" name="mode" id="mode" class="form-control" value="<%=list.mode%>">
+                    <input type="hidden" name="description" id="description" class="form-control" value="<%=list.description%>">
+                    <input type="hidden" name="member_count" id="member_count" class="form-control" value="<%=list.member_count%>">
+                    <input type="hidden" name="subscriber_count" id="subscriber_count" class="form-control" value="<%=list.subscriber_count%>">
+                    <input type="hidden" name="twitter_user_id" id="twitter_user_id" class="form-control" value="<%=list.user.id%>">
+                  </div>
 
-            <form id="fmShareList" action="/list/share" method="POST" class="form-horizontal" role="form">
+                  <div class="form-group">
+                      <button type="submit" class="btn btn-success btn-sm">Share List</button>
+                  </div>
+              </form>
+
+              <form id="fmUnShareList" action="/list/share" method="DELETE" class="form-horizontal fmShareList" role="form">
                 <div class="form-group">
                   <input type="hidden" name="twitter_list_id" id="inputList_id" class="form-control" value="<%=list.id%>">
-                  <input type="hidden" name="slug" id="slug" class="form-control" value="<%=list.slug%>">
-                  <input type="hidden" name="name" id="name" class="form-control" value="<%=list.name%>">
-                  <input type="hidden" name="uri" id="uri" class="form-control" value="<%=list.uri%>">
-                  <input type="hidden" name="mode" id="mode" class="form-control" value="<%=list.mode%>">
-                  <input type="hidden" name="description" id="description" class="form-control" value="<%=list.description%>">
-                  <input type="hidden" name="member_count" id="member_count" class="form-control" value="<%=list.member_count%>">
-                  <input type="hidden" name="subscriber_count" id="subscriber_count" class="form-control" value="<%=list.subscriber_count%>">
-                  <input type="hidden" name="twitter_user_id" id="twitter_user_id" class="form-control" value="<%=list.user.id%>">
                 </div>
 
                 <div class="form-group">
-                 <!--  <%# if(shared) { %>
-                    <button class="btn btn-danger header btn-delete-show">Remove from Favorites</button>
-                    <button class="btn btn-primary header btn-add-show" style="display:none;">Add to Favorites</button>
-                  <%# } else { %>
-                    <button class="btn btn-primary header btn-add-show">Add to Favorites</button>
-                    <button class="btn btn-danger header btn-delete-show" style="display:none;">Remove from Favorites</button>
-                  <%# } %> -->
-                    <button type="submit" class="btn btn-success btn-sm">Share List</button>
+                    <button type="submit" class="btn btn-warning btn-sm">Un-Share List</button>
                 </div>
-            </form>
+              </form>
+
+            <% } else { %>
+              <form id="fmShareList" action="/list/share" method="POST" class="form-horizontal fmShareList" role="form">
+                  <div class="form-group">
+                    <input type="hidden" name="twitter_list_id" id="inputList_id" class="form-control" value="<%=list.id%>">
+                    <input type="hidden" name="slug" id="slug" class="form-control" value="<%=list.slug%>">
+                    <input type="hidden" name="name" id="name" class="form-control" value="<%=list.name%>">
+                    <input type="hidden" name="uri" id="uri" class="form-control" value="<%=list.uri%>">
+                    <input type="hidden" name="mode" id="mode" class="form-control" value="<%=list.mode%>">
+                    <input type="hidden" name="description" id="description" class="form-control" value="<%=list.description%>">
+                    <input type="hidden" name="member_count" id="member_count" class="form-control" value="<%=list.member_count%>">
+                    <input type="hidden" name="subscriber_count" id="subscriber_count" class="form-control" value="<%=list.subscriber_count%>">
+                    <input type="hidden" name="twitter_user_id" id="twitter_user_id" class="form-control" value="<%=list.user.id%>">
+                  </div>
+
+                  <div class="form-group">
+                      <button type="submit" class="btn btn-success btn-sm">Share List</button>
+                  </div>
+              </form>
+
+              <form id="fmUnShareList" action="/list/share" method="DELETE" class="form-horizontal fmShareList" role="form" style="display:none;">
+                <div class="form-group">
+                  <input type="hidden" name="twitter_list_id" id="inputList_id" class="form-control" value="<%=list.id%>">
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-warning btn-sm">Un-Share List</button>
+                </div>
+              </form>
+            <% } %>
 
           </td>
           <td>
-
-          Think you've cultivated an awesome list that other people should be following? Share it here so that other people can find it and subscribe.
-
+            <% if(shared) { %>
+              <span id="unShareDesc">
+                If you don't want to specifically share your list on Listerlyify, un-share it here. Please note that this will NOT change the privacy setting of your list on Twitter.
+              </span>
+              <span id="ShareDesc" style="display:none;">
+                Think you've cultivated an awesome list that other people should be following? Share it here so that other people can find it and subscribe.
+              </span>
+            <% } else { %>
+              <span id="unShareDesc" style="display:none;">
+                If you don't want to specifically share your list on Listerlyify, un-share it here. Please note that this will NOT change the privacy setting of your list on Twitter.
+              </span>
+              <span id="ShareDesc">
+                Think you've cultivated an awesome list that other people should be following? Share it here so that other people can find it and subscribe.
+              </span>
+            <% } %>
           </td>
         </tr>
         <tr>

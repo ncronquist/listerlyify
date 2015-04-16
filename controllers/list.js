@@ -55,8 +55,8 @@ router.get('/listeditor', ensureLoggedIn('/'), function(req,res) {
         client.get('friends/list', friends_params, function(error, friends, response) {
           if(!error) {
             listgridinfo.friends = friends;
-            res.send(listgridinfo);
-            // res.render('list/listeditor', listgridinfo);
+            // res.send(listgridinfo);
+            res.render('list/listeditor', listgridinfo);
           } else {
             res.send('there was an error');
           }
@@ -91,7 +91,7 @@ router.get('/lists', ensureLoggedIn('/'), function(req,res) {
 })
 
 // #############################################################################
-// Lists owned by specied user
+// Lists owned by specified user
 // #############################################################################
 router.get('/mylists', ensureLoggedIn('/'), function(req,res) {
   var client = new Twitter({
@@ -228,7 +228,31 @@ router.post('/create', function(req,res) {
 })
 
 // #############################################################################
-// Share list
+// Delete list
+// #############################################################################
+router.post('/destroy', function(req,res) {
+  var client = new Twitter({
+    consumer_key: process.env.TWITTER_CONSUMER_KEY,
+    consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
+    access_token_key: req.user.token,
+    access_token_secret: req.user.tokenSecret
+  });
+
+  console.log("Req.body for deleting a list: \n", req.body);
+  var destroy_params = req.body;
+  client.post('lists/destroy', destroy_params, function(error, list, response) {
+    if (!error) {
+      req.flash('info', 'Your list has been deleted from Twitter');
+      res.redirect('/list/mylists');
+    } else {
+      res.send(error);
+    }
+  })
+})
+
+
+// #############################################################################
+// Share list on Listerlyify
 // #############################################################################
 router.post('/share', function(req,res) {
 
@@ -243,6 +267,15 @@ router.post('/share', function(req,res) {
     }).spread(function(list, created) {
       res.send(list);
     })
+  })
+})
+
+// #############################################################################
+// Un-share a list from Listerlyify
+// #############################################################################
+router.delete('/share', function(req,res) {
+  db.list.destroy({where: {twitter_list_id: req.body.twitter_list_id}}).then(function() {
+    res.send({deleted:true});
   })
 })
 
