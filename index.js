@@ -23,7 +23,6 @@ app.set('view engine','ejs');
 
 // Use
 app.use(express.static('public'));
-// app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(cookieParser());
 app.use(session({
@@ -69,7 +68,7 @@ app.use(function(req,res,next) {
   next();
 })
 
-// Customer middleware - is user logged in
+// Custom middleware - is user logged in
 app.use(function(req,res,next) {
   req.getUser = function() {
     return req.user || false;
@@ -77,6 +76,7 @@ app.use(function(req,res,next) {
   next();
 })
 
+// Custom middleware to pass the user object into every response
 app.use(function(req,res,next){
     var luser = req.getUser();
     res.locals.luser = luser;

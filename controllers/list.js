@@ -2,7 +2,8 @@
 var express = require('express'),
     ensureLoggedIn = require('connect-ensure-login').ensureLoggedIn,
     Twitter = require('twitter'),
-    async = require('async');
+    async = require('async'),
+    db = require('../models');
 
 // Variables
 var router = express.Router();
@@ -112,7 +113,7 @@ router.get('/mylists', ensureLoggedIn('/'), function(req,res) {
 })
 
 // #############################################################################
-// Specified list page
+// Show list page
 // #############################################################################
 router.get('/show/:list_id', ensureLoggedIn('/'), function(req,res) {
   var client = new Twitter({
@@ -212,6 +213,24 @@ router.post('/create', function(req,res) {
   })
 })
 
+// #############################################################################
+// Share list
+// #############################################################################
+router.post('/share', function(req,res) {
+
+  // res.send(req.body);
+  // console.log(req.body);
+  db.user.find({where: {twitter_user_id: req.body.twitter_user_id}}).then(function(user) {
+    // user.addList()
+    req.body.user_id = user.id;
+    db.list.findOrCreate({
+      where: {twitter_list_id: req.body.twitter_list_id},
+      defaults: req.body
+    }).spread(function(list, created) {
+      res.send(list);
+    })
+  })
+})
 
 
 // Export
