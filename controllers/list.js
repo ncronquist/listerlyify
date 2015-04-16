@@ -245,12 +245,14 @@ router.post('/destroy', function(req,res) {
       // If the list has been deleted on Twitter, make sure to remove it from
       // being shared on Listerlyify
       db.list.find({where: {twitter_list_id: req.body.list_id}}).then(function(list) {
-        console.log("### LIST TO BE DELETED: \n", list);
-        var name = list.dataValues.name;
-        db.list.destroy({where: {twitter_list_id: req.body.list_id}}).then(function() {
-          req.flash('info', 'List ' + name + ' has been deleted from Twitter');
-          res.redirect('/list/mylists');
-        })
+        if(list) {
+          console.log("### LIST TO BE DELETED: \n", list);
+          var name = list.dataValues.name;
+          db.list.destroy({where: {twitter_list_id: req.body.list_id}}).then(function() {
+            req.flash('info', 'List ' + name + ' has been deleted from Twitter');
+            res.redirect('/list/mylists');
+          })
+        }
       })
     } else {
       res.send(error);
@@ -284,6 +286,17 @@ router.post('/share', function(req,res) {
 router.delete('/share', function(req,res) {
   db.list.destroy({where: {twitter_list_id: req.body.twitter_list_id}}).then(function() {
     res.send({deleted:true});
+  })
+})
+
+// #############################################################################
+// Browse lists shared on Listerlyify
+// #############################################################################
+router.get('/browse', function(req,res) {
+  db.list.findAll({order: 'subscriber_count DESC'}).then(function(lists) {
+    // res.send({lists:lists});
+    res.render("list/browse", {lists:lists});
+
   })
 })
 
