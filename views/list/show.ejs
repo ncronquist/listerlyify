@@ -1,0 +1,64 @@
+<% include ../partials/header %>
+
+<% include ../partials/alerts %>
+
+<div class="header-space"></div>
+
+<div class="row">
+  <div class="col-xs-6 col-sm-4 col-sm-offset-2">
+    <table class="table">
+      <tr>
+        <td>
+
+          <form action="/list/share" method="POST" class="form-horizontal" role="form">
+              <div class="form-group">
+                <input type="hidden" name="twitter_list_id" id="inputList_id" class="form-control" value="<%=id%>">
+                <input type="hidden" name="slug" id="slug" class="form-control" value="<%=slug%>">
+                <!-- <input type="hidden" name="list_id" id="inputList_id" class="form-control" value="<%=id%>">
+                <input type="hidden" name="list_id" id="inputList_id" class="form-control" value="<%=id%>">
+                <input type="hidden" name="list_id" id="inputList_id" class="form-control" value="<%=id%>">
+                <input type="hidden" name="list_id" id="inputList_id" class="form-control" value="<%=id%>">
+                <input type="hidden" name="list_id" id="inputList_id" class="form-control" value="<%=id%>">
+                <input type="hidden" name="list_id" id="inputList_id" class="form-control" value="<%=id%>">
+                <input type="hidden" name="list_id" id="inputList_id" class="form-control" value="<%=id%>"> -->
+              </div>
+
+              <div class="form-group">
+                  <button type="submit" class="btn btn-success">Share List</button>
+              </div>
+          </form>
+
+        </td>
+        <td>
+
+        Think you've cultivated an awesome list that other people should be following? Share it here so that other people can find it and subscribe.
+
+        </td>
+      </tr>
+      <tr>
+        <td>
+
+          <form action="/list/destroy" method="POST" class="form-horizontal" role="form">
+              <div class="form-group">
+                <input type="hidden" name="list_id" id="inputList_id" class="form-control" value="<%=id%>">
+              </div>
+              <div class="form-group">
+                  <button type="submit" class="btn btn-danger">Delete List</button>
+              </div>
+          </form>
+
+        </td>
+        <td>
+
+        Deleting the list will remove it from your actual Twitter lists. This action cannot be undone.
+
+        </td>
+      </tr>
+
+    </table>
+  </div>
+</div>
+
+
+
+<% include ../partials/footer %>

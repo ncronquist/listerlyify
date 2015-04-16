@@ -114,7 +114,7 @@ router.get('/mylists', ensureLoggedIn('/'), function(req,res) {
 // #############################################################################
 // Specified list page
 // #############################################################################
-router.get('/show/:list_id', function(req,res) {
+router.get('/show/:list_id', ensureLoggedIn('/'), function(req,res) {
   var client = new Twitter({
     consumer_key: process.env.TWITTER_CONSUMER_KEY,
     consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
@@ -125,8 +125,8 @@ router.get('/show/:list_id', function(req,res) {
   show_params = {list_id: req.params.list_id};
   client.get('lists/show', show_params, function(error, list, response) {
     if (!error) {
-      res.send(list);
-      // res.render('list/mylists', lists);
+      // res.send(list);
+      res.render('list/show', list);
     } else {
       res.send(error);
     }
