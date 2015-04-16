@@ -90,6 +90,6 @@ app.use('/auth', require('./controllers/auth.js'));
 app.use('/list', require('./controllers/list.js'));
 app.use('/user', require('./controllers/user.js'));
 
-var server = app.listen(3000)
+var server = app.listen(process.env.PORT || 3000)
 console.log('Express server started on port %s', server.address().port);
 
