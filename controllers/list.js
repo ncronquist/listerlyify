@@ -32,8 +32,10 @@ router.get('/listeditor', ensureLoggedIn('/'), function(req,res) {
 
       listgridinfo.listArray = listArray;
 
+      // This listmembers function makes an api call to Twitter to get the
+      // members of the list_id passed in
       var listmembers = function (list_id, doneCallback) {
-        // Call back with no error and the result of num * num
+
         var members_params = {list_id: list_id, count: 5000, include_entities: false};
         client.get('lists/members', members_params, function(error, members, response) {
           if (!error) {
@@ -44,20 +46,17 @@ router.get('/listeditor', ensureLoggedIn('/'), function(req,res) {
         })
       };
 
-      // Square each number in the array [1, 2, 3, 4]
+      // Run through each list id in the list array and call the listmembers
+      // function to get the members of that list
       async.map(listArray, listmembers, function (err, results) {
-        // Square has been called on each of the numbers
-        // so we're now done!
-        // console.log("Finished!");
-        // console.log(results);
         listgridinfo.listmembers = results;
 
         var friends_params = {count: 200, skip_status: true, include_user_entities: false};
         client.get('friends/list', friends_params, function(error, friends, response) {
           if(!error) {
             listgridinfo.friends = friends;
-            // res.send(listgridinfo);
-            res.render('list/listeditor', listgridinfo);
+            res.send(listgridinfo);
+            // res.render('list/listeditor', listgridinfo);
           } else {
             res.send('there was an error');
           }
@@ -136,7 +135,22 @@ router.get('/show/:list_id', ensureLoggedIn('/'), function(req,res) {
           showObj.members = members;
 
           // res.send(showObj);
-          res.render('list/show', showObj);
+          // Check to see if this list has been shared
+          db.list.find({where: {twitter_list_id: showObj.list.id_str}}).then(function(list) {
+
+            if(!list) {
+              showObj.shared = false;
+            } else {
+              showObj.shared = true;
+            }
+
+            console.log("List shared:", showObj.shared);
+
+            // res.send(showObj);
+            res.render('list/show', showObj);
+
+          })
+
         } else {
           res.send(error);
         }
