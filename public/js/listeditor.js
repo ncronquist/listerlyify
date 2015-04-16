@@ -7,24 +7,23 @@ $(function(){
   // Add the active class to the Edit Lists button in the navbar
   $('#listeditor').addClass('active');
 
-
+  // Initialize the data table
   var table = $('#listgrideditor').DataTable({
     "scrollY": 590,
     "scrollX": "100%"
   });
 
-  // new $.fn.dataTable.FixedHeader( table, {
-  //   left: true,
-  //   top: true
-  // });
+    // Add the FixedColumns extension for the data table
+    // This extension will fix the left most column (friends)
+    // in place so that if a user has many lists, they can scroll
+    // right through their lists without losing the user column
+    new $.fn.dataTable.FixedColumns( table );
 
-  new $.fn.dataTable.FixedColumns( table );
-
-  // var colvis = new $.fn.dataTable.ColVis( table );
-
-  // $( colvis.button() ).insertAfter('div.info');
-  // new $.fn.dataTable.ColReorder( table );
-
+  // Ajax Form Submit Event
+  // Catch the default submit for when a user clicks a checkmark to
+  // add or remove a member from a list. Then make an ajax call to the
+  // correct route to perform the action and update the DOM to reflect
+  // the change.
   $('#listgrideditor tbody').on('submit', 'form', function (e) {
     e.preventDefault();
     var form = $(this);
@@ -50,4 +49,5 @@ $(function(){
       }
     })
   });
+
 });
