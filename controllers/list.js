@@ -58,12 +58,12 @@ router.get('/listeditor', ensureLoggedIn('/'), function(req,res) {
             // res.send(listgridinfo);
             res.render('list/listeditor', listgridinfo);
           } else {
-            res.send('there was an error');
+            res.send(error);
           }
         })
       });
     } else {
-      res.send('there was an error');
+      res.send(error);
     }
   })
 
@@ -242,8 +242,16 @@ router.post('/destroy', function(req,res) {
   var destroy_params = req.body;
   client.post('lists/destroy', destroy_params, function(error, list, response) {
     if (!error) {
-      req.flash('info', 'Your list has been deleted from Twitter');
-      res.redirect('/list/mylists');
+      // If the list has been deleted on Twitter, make sure to remove it from
+      // being shared on Listerlyify
+      db.list.find({where: {twitter_list_id: req.body.list_id}}).then(function(list) {
+        console.log("### LIST TO BE DELETED: \n", list);
+        var name = list.dataValues.name;
+        db.list.destroy({where: {twitter_list_id: req.body.list_id}}).then(function() {
+          req.flash('info', 'List ' + name + ' has been deleted from Twitter');
+          res.redirect('/list/mylists');
+        })
+      })
     } else {
       res.send(error);
     }
