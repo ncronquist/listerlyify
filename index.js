@@ -16,7 +16,7 @@ var app = express();
 var TWITTER_CONSUMER_KEY = process.env.TWITTER_CONSUMER_KEY;
 var TWITTER_CONSUMER_SECRET = process.env.TWITTER_CONSUMER_SECRET;
 var NODE_ENV = process.env.NODE_ENV || 'development';
-var BASE_URL = (NODE_ENV === 'production') ? 'https://listerlyify.herokuapps.com' : 'http://127.0.0.1:3000';
+var BASE_URL = (NODE_ENV === 'production') ? 'https://listerlyify.herokuapp.com' : 'http://127.0.0.1:3000';
 
 // Set
 app.set('view engine','ejs');
