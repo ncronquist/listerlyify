@@ -10,6 +10,10 @@ form.member .form-group {
   margin-bottom: 5px;
 }
 
+.topnav .navbar-brand {
+  font-size: 18px;
+}
+
 .header-space {
   height: 70px;
 }
