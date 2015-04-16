@@ -122,11 +122,24 @@ router.get('/show/:list_id', ensureLoggedIn('/'), function(req,res) {
     access_token_secret: req.user.tokenSecret
   });
 
-  show_params = {list_id: req.params.list_id};
+  var showObj = {};
+  var show_params = {list_id: req.params.list_id};
   client.get('lists/show', show_params, function(error, list, response) {
     if (!error) {
-      // res.send(list);
-      res.render('list/show', list);
+      showObj.list = list;
+
+      // Now get all the members of this list
+      var members_params = {list_id: list.id, count: 5000, include_entities: false};
+      client.get('lists/members', members_params, function(error, members, response) {
+        if (!error) {
+          showObj.members = members;
+
+          // res.send(showObj);
+          res.render('list/show', showObj);
+        } else {
+          res.send(error);
+        }
+      })
     } else {
       res.send(error);
     }

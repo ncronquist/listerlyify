@@ -18,6 +18,10 @@ table img {
   border-radius: 5px;
 }
 
+table#listshow .form-group {
+  margin-bottom: 0px;
+}
+
 .alert {
   position: fixed;
   margin-top: 70px;
@@ -33,6 +37,10 @@ table img {
 
 .row {
   margin-bottom: 20px;
+}
+
+.table>tbody>tr>td {
+  vertical-align: middle;
 }
 
 .table td {
