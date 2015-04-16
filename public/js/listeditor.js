@@ -4,6 +4,10 @@ $(function(){
 
   console.log('listeditor DOM: loaded');
 
+  // Add the active class to the Edit Lists button in the navbar
+  $('#listeditor').addClass('active');
+
+
   var table = $('#listgrideditor').DataTable({
     "scrollY": 590,
     "scrollX": "100%"

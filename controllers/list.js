@@ -7,7 +7,9 @@ var express = require('express'),
 // Variables
 var router = express.Router();
 
+// #############################################################################
 // Main logged in page - GET /
+// #############################################################################
 router.get('/listeditor', ensureLoggedIn('/'), function(req,res) {
   var listgridinfo = {};
   var client = new Twitter({
@@ -67,7 +69,9 @@ router.get('/listeditor', ensureLoggedIn('/'), function(req,res) {
 
 });
 
+// #############################################################################
 // List all lists specified user subscribes to including their own
+// #############################################################################
 router.get('/lists', ensureLoggedIn('/'), function(req,res) {
   var client = new Twitter({
     consumer_key: process.env.TWITTER_CONSUMER_KEY,
@@ -86,7 +90,9 @@ router.get('/lists', ensureLoggedIn('/'), function(req,res) {
   });
 })
 
+// #############################################################################
 // Lists owned by specied user
+// #############################################################################
 router.get('/mylists', ensureLoggedIn('/'), function(req,res) {
   var client = new Twitter({
     consumer_key: process.env.TWITTER_CONSUMER_KEY,
@@ -97,17 +103,39 @@ router.get('/mylists', ensureLoggedIn('/'), function(req,res) {
 
   client.get('lists/ownerships', function(error, lists, response) {
     if (!error) {
-      res.send(lists);
+      // res.send(lists);
+      res.render('list/mylists', lists);
     } else {
-      res.send('there was an error');
+      res.send(error);
     }
   })
 })
 
+// #############################################################################
 // Specified list page
-router.get('/lists/:listid')
+// #############################################################################
+router.get('/show/:list_id', function(req,res) {
+  var client = new Twitter({
+    consumer_key: process.env.TWITTER_CONSUMER_KEY,
+    consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
+    access_token_key: req.user.token,
+    access_token_secret: req.user.tokenSecret
+  });
 
+  show_params = {list_id: req.params.list_id};
+  client.get('lists/show', show_params, function(error, list, response) {
+    if (!error) {
+      res.send(list);
+      // res.render('list/mylists', lists);
+    } else {
+      res.send(error);
+    }
+  })
+})
+
+// #############################################################################
 // Add a new member to a list
+// #############################################################################
 router.post('/member/add', function(req,res) {
   var client = new Twitter({
     consumer_key: process.env.TWITTER_CONSUMER_KEY,
@@ -127,7 +155,9 @@ router.post('/member/add', function(req,res) {
   })
 })
 
+// #############################################################################
 // Remove a member from a list
+// #############################################################################
 router.post('/member/remove', function(req,res) {
   var client = new Twitter({
     consumer_key: process.env.TWITTER_CONSUMER_KEY,
@@ -147,7 +177,9 @@ router.post('/member/remove', function(req,res) {
   })
 })
 
+// #############################################################################
 // Create a list
+// #############################################################################
 router.post('/create', function(req,res) {
   var client = new Twitter({
     consumer_key: process.env.TWITTER_CONSUMER_KEY,

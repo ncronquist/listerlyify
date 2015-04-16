@@ -65,21 +65,24 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#services">Browse Lists</a>
+                    <li id="browse">
+                        <a href="/list/browse">Browse Lists</a>
                     </li>
                     <% if(luser) { %>
-                        <li>
+                        <li id="mylists">
+                            <a href="/list/mylists">My Lists</a>
+                        </li>
+                        <li id="listeditor">
                             <a href="/list/listeditor">Edit Lists</a>
                         </li>
-                        <li>
+                        <li id="logout">
                             <a href="/auth/logout">Logout</a>
                         </li>
                         <li>
                             <img src="<%=luser._json.profile_image_url%>" class="img-responsive" alt="Image">
                         </li>
                     <% } else { %>
-                        <li>
+                        <li id="login">
                             <a href="/auth/twitter"><i class="fa fa-twitter fa-fw"></i>Login with Twitter</a>
                         </li>
                     <% } %>
