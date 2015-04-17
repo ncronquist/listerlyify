@@ -149,7 +149,11 @@
     </table>
 
   </div> <!-- End r1c1 -->
-  <div class="col-xs-6 col-sm-4">
+  <% if(shared) { %>
+  <div id="commentscol" class="col-xs-6 col-sm-4">
+  <% } else { %>
+  <div id="commentscol" class="col-xs-6 col-sm-4" style="display: none;">
+  <% } %>
     <form action="/list/comment" class="form-horizontal add-comment" role="form">
         <h4> Add a Comment </h4>
         <div class="form-group">
@@ -163,6 +167,11 @@
       <% if(comments.length > 0) { %>
         <% comments.forEach(function(comment, idx, array) { %>
           <div class="comment well">
+            <!-- <div class="comment-info"> -->
+              <span id="screen_name" class="comment-info"><%=comment.screen_name%></span>
+              <span id="created_at" class="comment-info"><%=comment.created_at%></span>
+            <!-- </div> -->
+            <hr>
             <%- comment.comment %>
           </div>
         <% }) %>

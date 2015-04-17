@@ -146,10 +146,28 @@ router.get('/show/:list_id', ensureLoggedIn('/'), function(req,res) {
               showObj.shared = true;
 
               // If the list was shared, also find the comments associated to it
-              db.comment.findAll({where: {list_id: list.id},include: [{all:true}]}).then(function(comments) {
-                showObj.comments = comments;
-                res.send(showObj);
-                // res.render('list/show', showObj);
+              db.comment.findAll({where: {list_id: list.id},order: 'created_at DESC'}).then(function(comments) {
+                // var usercomments = comments.map(function(comment) {
+                //   db.user.find({where: {id: comment.user_id}}).then(function(user) {
+                //     comment.screen_name = user.screen_name;
+                //     return comment;
+                //   })
+                // })
+                var getCommentOwner = function(comment, callback) {
+                  // var usercomment = comment;
+                  db.user.find({where: {id: comment.user_id}}).then(function(user) {
+                    // usercomment.screen_name = user.screen_name;
+                    // comment.screen_name = user.screen_name;
+                    return callback(null, {comment: comment.comment, screen_name: user.screen_name, created_at: comment.created_at});
+                    // return doneCallback(null,
+                  })
+                }
+
+                async.map(comments, getCommentOwner, function(err,result) {
+                  showObj.comments = result;
+                  // res.send(showObj);
+                  res.render('list/show', showObj);
+                })
               })
             }
           })

@@ -30,16 +30,17 @@ $(function(){
           $('#ShareDesc').hide();
           $('#fmUnShareList').show();
           $('#unShareDesc').show();
-
+          $('#commentscol').show();
         } else {
           $('#fmShareList').show();
           $('#ShareDesc').show();
           $('#fmUnShareList').hide();
           $('#unShareDesc').hide();
+          $('#commentscol').fadeOut('slow', function() {});
+          $('.comment.well').fadeOut('slow', function() {
+            $(this).remove();
+          });
         }
-        // Switch which button is visible
-        // addBtn.hide();
-        // delBtn.show();
       } else {
         alert(data.message);
         // editor.edit();
@@ -117,7 +118,10 @@ $(function(){
         console.log('Comment saved', data);
 
         // Create new div and append it here
-        var newDiv = $('<div class="comment well" style="display:none;">' + comment + '</div>');
+        var newDiv = $('<div class="comment well" style="display:none;">' +
+                      '<span id="screen_name" class="comment-info">You</span>' +
+                      '<span id="created_at" class="comment-info">Just Now</span>' +
+                      '<hr>' + comment + '</div>');
         newDiv.prependTo('div.comments');
         newDiv.show('slow', function() {
           editor.edit();

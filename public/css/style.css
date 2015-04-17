@@ -78,3 +78,16 @@ table button:focus {
   vertical-align: middle;
   line-height: 45px;
 }
+
+.comment-info {
+  color: #A7A7A7;
+  margin-bottom: 20px;
+}
+
+#screen_name {
+  float: left;
+}
+
+#created_at {
+  float: right;
+}
