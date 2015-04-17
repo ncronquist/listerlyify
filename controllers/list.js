@@ -265,6 +265,7 @@ router.post('/destroy', function(req,res) {
     if (!error) {
       // If the list has been deleted on Twitter, make sure to remove it from
       // being shared on Listerlyify
+      console.log("List id to be deleted:", req.body.list_id);
       db.list.find({where: {twitter_list_id: req.body.list_id}}).then(function(list) {
         if(list) {
           console.log("### LIST TO BE DELETED: \n", list);
@@ -273,6 +274,9 @@ router.post('/destroy', function(req,res) {
             req.flash('info', 'List ' + name + ' has been deleted from Twitter');
             res.redirect('/list/mylists');
           })
+        } else {
+          req.flash('info', 'List ' + name + ' has been deleted from Twitter');
+          res.redirect('/list/mylists');
         }
       })
     } else {
