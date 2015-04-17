@@ -35,6 +35,18 @@ The main goal of this project is to make editing your lists as easy as possible.
 ### Secondary Goals
 Some people spend a great deal of time curating their lists to match certain interest. Tech lists, music lists, political lists, sports lists, etc... These lists make Twitter better by allowing you to get to the content you want faster. Not everyone is interested in spending a lot of time to set up their lists though; so help them out by sharing your best lists on Listerlyify. The lists shared on Listerlyify are available for anyone to check out and decide if they want to subscribe. You can also comment on lists  to discuss who to FF (Follow Friday) and who to unfollow.
 
+### Wireframes
+![enter image description here](https://raw.githubusercontent.com/ncronquist/listerlyify/master/public/img/wireframe-01.jpg)
+![enter image description here](https://raw.githubusercontent.com/ncronquist/listerlyify/master/public/img/wireframe-02.jpg)
+
+### ER-Diagrams
+In my original model, I was planning to store relationship of users subscribing to lists. Since users would be able to subscribe/unsubscribe from lists through Twitter and Listerlyify wouldn't know about those changes, that relationship was removed.
+
+![enter image description here](https://raw.githubusercontent.com/ncronquist/listerlyify/master/public/img/Listerlyify-ERD.jpg)
+
+### Trello Board
+https://trello.com/b/Np7HI93M/listerlyify
+
 ## Issues
 This web app is currently in alpha testing and definitely has some bugs. Known issues:
 - Most errors are uncaught and simply sent to the user
