@@ -122,33 +122,36 @@ router.get('/show/:list_id', ensureLoggedIn('/'), function(req,res) {
     access_token_secret: req.user.tokenSecret
   });
 
+  // REST call to Twitter to get the list information
   var showObj = {};
   var show_params = {list_id: req.params.list_id};
   client.get('lists/show', show_params, function(error, list, response) {
     if (!error) {
       showObj.list = list;
 
-      // Now get all the members of this list
+      // REST call to Twitter to get all the members of this list
       var members_params = {list_id: list.id, count: 5000, include_entities: false};
       client.get('lists/members', members_params, function(error, members, response) {
         if (!error) {
           showObj.members = members;
 
-          // res.send(showObj);
-          // Check to see if this list has been shared
+          // DB call to check if this list has been shared
           db.list.find({where: {twitter_list_id: showObj.list.id_str}}).then(function(list) {
 
             if(!list) {
               showObj.shared = false;
+              showObj.comments = {};
+              res.render('list/show', showObj);
             } else {
               showObj.shared = true;
+
+              // If the list was shared, also find the comments associated to it
+              db.comment.findAll({where: {list_id: list.id},include: [{all:true}]}).then(function(comments) {
+                showObj.comments = comments;
+                res.send(showObj);
+                // res.render('list/show', showObj);
+              })
             }
-
-            console.log("List shared:", showObj.shared);
-
-            // res.send(showObj);
-            res.render('list/show', showObj);
-
           })
 
         } else {
@@ -286,6 +289,21 @@ router.post('/share', function(req,res) {
 router.delete('/share', function(req,res) {
   db.list.destroy({where: {twitter_list_id: req.body.twitter_list_id}}).then(function() {
     res.send({deleted:true});
+  })
+})
+
+// #############################################################################
+// Add comment
+// #############################################################################
+router.post('/comment', function(req,res) {
+  db.user.find({where: {twitter_user_id: req.user._json.id_str}}).then(function(user) {
+    db.list.find({where: {twitter_list_id: req.body.twitter_list_id}}).then(function(list) {
+      db.comment.create({comment: req.body.comment, user_id: user.id, list_id: list.id}).then(function(comment) {
+        res.send(comment);
+      })
+    })
+  }).catch(function(error){
+    res.send(error);
   })
 })
 

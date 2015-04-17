@@ -150,7 +150,24 @@
 
   </div> <!-- End r1c1 -->
   <div class="col-xs-6 col-sm-4">
-    Comments placeholder
+    <form action="/list/comment" class="form-horizontal add-comment" role="form">
+        <h4> Add a Comment </h4>
+        <div class="form-group">
+          <input type="hidden" name="twitter_list_id" id="twitter_list_id" value="<%=list.id%>">
+          <textarea id="comment" class="form-control hidden" rows="10"></textarea>
+          <div id="epiceditor"></div>
+          <button type="submit" class="btn btn-block btn-primary">Submit</button>
+        </div>
+    </form>
+    <div class="comments">
+      <% if(comments.length > 0) { %>
+        <% comments.forEach(function(comment, idx, array) { %>
+          <div class="comment well">
+            <%- comment.comment %>
+          </div>
+        <% }) %>
+      <% } %>
+    </div>
   </div> <!-- End r1c2 -->
 </div> <!-- End row 1 -->
 

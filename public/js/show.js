@@ -48,4 +48,88 @@ $(function(){
     })
   })
 
+  // Load EpicEditor
+  var opts = {
+    container: 'epiceditor',
+    textarea: comment,
+    basePath: '../../',
+    clientSideStorage: false,
+    localStorageName: 'epiceditor',
+    useNativeFullscreen: true,
+    parser: marked,
+    file: {
+      name: 'epiceditor',
+      defaultContent: '',
+      autoSave: 100
+    },
+    theme: {
+      base: '/themes/base/epiceditor.css',
+      preview: '/themes/preview/github.css',
+      editor: '/themes/editor/epic-light.css'
+    },
+    button: {
+      preview: true,
+      fullscreen: false,
+      bar: true
+    },
+    focusOnLoad: true,
+    shortcut: {
+      modifier: 18,
+      fullscreen: 70,
+      preview: 80
+    },
+    string: {
+      togglePreview: 'Toggle Preview Mode',
+      toggleEdit: 'Toggle Edit Mode',
+      toggleFullscreen: 'Enter Fullscreen'
+    },
+    autogrow: {
+      minHeight: 150,
+      maxHeight: 400,
+      scroll: false
+    }
+  }
+
+  var editor = new EpicEditor(opts).load();
+
+  // AJAX Add Comments
+  $('form.add-comment').on('submit', function(e) {
+    e.preventDefault();
+
+    var postUrl = $(this).attr('action');
+    var twitter_list_id = $('form.add-comment #twitter_list_id').val();
+    // If you don't preview the editor, sometimes the innerHTML doesn't get
+    // updated
+    editor.preview();
+    var comment = editor.getElement('previewer').body.innerHTML
+    var postData = {
+                      twitter_list_id: twitter_list_id,
+                      comment: comment
+                    }
+
+    $.ajax({
+      method: 'POST',
+      url: postUrl,
+      data: postData
+    }).done(function(data) {
+
+      if (!data.errors) {
+        console.log('Comment saved', data);
+
+        // Create new div and append it here
+        var newDiv = $('<div class="comment well" style="display:none;">' + comment + '</div>');
+        newDiv.prependTo('div.comments');
+        newDiv.show('slow', function() {
+          editor.edit();
+          editor.getElement('editor').body.innerHTML = '';
+        });
+      } else {
+        alert(data.message);
+        editor.edit();
+        editor.focus();
+      }
+    })
+  })
+
+
 })
