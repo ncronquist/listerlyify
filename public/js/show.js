@@ -31,6 +31,7 @@ $(function(){
           $('#fmUnShareList').show();
           $('#unShareDesc').show();
           $('#commentscol').show();
+          var editor = new EpicEditor(opts).load();
         } else {
           $('#fmShareList').show();
           $('#ShareDesc').show();
