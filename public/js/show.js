@@ -2,7 +2,56 @@ console.log('show: coming online');
 
 $(function(){
 
+  var editor;
+
   console.log('show DOM: loaded');
+
+    // Load EpicEditor
+  var loadEdit = function() {
+    var opts = {
+      container: 'epiceditor',
+      textarea: comment,
+      basePath: '../../',
+      clientSideStorage: false,
+      localStorageName: 'epiceditor',
+      useNativeFullscreen: true,
+      parser: marked,
+      file: {
+        name: 'epiceditor',
+        defaultContent: '',
+        autoSave: 100
+      },
+      theme: {
+        base: '/themes/base/epiceditor.css',
+        preview: '/themes/preview/github.css',
+        editor: '/themes/editor/epic-light.css'
+      },
+      button: {
+        preview: true,
+        fullscreen: false,
+        bar: true
+      },
+      focusOnLoad: true,
+      shortcut: {
+        modifier: 18,
+        fullscreen: 70,
+        preview: 80
+      },
+      string: {
+        togglePreview: 'Toggle Preview Mode',
+        toggleEdit: 'Toggle Edit Mode',
+        toggleFullscreen: 'Enter Fullscreen'
+      },
+      autogrow: {
+        minHeight: 150,
+        maxHeight: 400,
+        scroll: false
+      }
+    }
+
+    editor = new EpicEditor(opts).load();
+  }
+
 
   // Ajax Share List
   // Catch the default submit event for the share list form and then
@@ -31,7 +80,9 @@ $(function(){
           $('#fmUnShareList').show();
           $('#unShareDesc').show();
           $('#commentscol').show();
-          var editor = new EpicEditor(opts).load();
+          // var editor = new EpicEditor(opts).load();
+          // editor.load();
+          loadEdit();
         } else {
           $('#fmShareList').show();
           $('#ShareDesc').show();
@@ -50,49 +101,7 @@ $(function(){
     })
   })
 
-  // Load EpicEditor
-  var opts = {
-    container: 'epiceditor',
-    textarea: comment,
-    basePath: '../../',
-    clientSideStorage: false,
-    localStorageName: 'epiceditor',
-    useNativeFullscreen: true,
-    parser: marked,
-    file: {
-      name: 'epiceditor',
-      defaultContent: '',
-      autoSave: 100
-    },
-    theme: {
-      base: '/themes/base/epiceditor.css',
-      preview: '/themes/preview/github.css',
-      editor: '/themes/editor/epic-light.css'
-    },
-    button: {
-      preview: true,
-      fullscreen: false,
-      bar: true
-    },
-    focusOnLoad: true,
-    shortcut: {
-      modifier: 18,
-      fullscreen: 70,
-      preview: 80
-    },
-    string: {
-      togglePreview: 'Toggle Preview Mode',
-      toggleEdit: 'Toggle Edit Mode',
-      toggleFullscreen: 'Enter Fullscreen'
-    },
-    autogrow: {
-      minHeight: 150,
-      maxHeight: 400,
-      scroll: false
-    }
-  }
-
-  var editor = new EpicEditor(opts).load();
+  loadEdit();
 
   // AJAX Add Comments
   $('form.add-comment').on('submit', function(e) {
