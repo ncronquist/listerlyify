@@ -5,7 +5,7 @@
 <div class="header-space"></div>
 
 <div class="row">
-  <div class="col-xs-6 col-sm-4 col-sm-offset-2">
+  <div class="col-xs-12 col-sm-4 col-sm-offset-2">
     <h2><%=list.name%></h2>
     <p><%=list.description%></p>
     <a href="https://twitter.com/<%=list.uri%>">View list on Twitter</a>
@@ -150,9 +150,9 @@
 
   </div> <!-- End r1c1 -->
   <% if(shared) { %>
-  <div id="commentscol" class="col-xs-6 col-sm-4">
+  <div id="commentscol" class="col-xs-12 col-sm-4">
   <% } else { %>
-  <div id="commentscol" class="col-xs-6 col-sm-4" style="display: none;">
+  <div id="commentscol" class="col-xs-12 col-sm-4" style="display: none;">
   <% } %>
     <form action="/list/comment" class="form-horizontal add-comment" role="form">
         <h4> Add a Comment </h4>
