@@ -6,12 +6,13 @@ var router = express.Router();
 
 // Home page - GET /
 router.get('/', function(req,res) {
-  // Get potential alert messages
-  // var alerts = req.flash();
-
   res.render('main/index');
-  // res.render('main/index', {alerts:alerts});
 });
+
+// About/Contact page - GET /about-contact
+router.get('/about-contact', function(req,res) {
+  res.render('main/about');
+})
 
 
 // Export
