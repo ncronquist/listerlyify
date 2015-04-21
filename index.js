@@ -89,6 +89,12 @@ app.use('/', require('./controllers/main.js'));
 app.use('/auth', require('./controllers/auth.js'));
 app.use('/list', require('./controllers/list.js'));
 app.use('/user', require('./controllers/user.js'));
+// Catch bad routes
+app.get('/*', function(req,res) {
+  req.flash('info', 'Oops! Looks like that url doesn\'t exist. Try navigating to the page you were looking for from here.');
+  // res.send("Hopefully this only happens on a bad route...")
+  res.redirect('/');
+})
 
 var server = app.listen(process.env.PORT || 3000)
 console.log('Express server started on port %s', server.address().port);
